@@ -1,0 +1,23 @@
+{
+  "name": "kearney-plumbing",
+  "version": "1.0.0",
+  "description": "Welcome to Kearney Plumbing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "construction",
+    "web",
+    "html"
+  ],
+  "author": "Shane Barry shane325@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "serve-favicon": "^2.5.0"
+  }
+}
