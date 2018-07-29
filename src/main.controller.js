@@ -5,6 +5,7 @@
  *
  */
 let path = require('path');
+let commonConfig = require('./config/common');
 
 /**
  * Return home page
@@ -12,6 +13,8 @@ let path = require('path');
  * @returns - renders home page
  */
 module.exports.getHome = (req, res) => {
-  res.render('../views/pages/index');
+  res.render('../views/pages/index', {
+    common: commonConfig
+  });
 };
 

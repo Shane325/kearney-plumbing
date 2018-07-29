@@ -1,0 +1,32 @@
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+#Footer .footer_action .background-blue {
+    background-color: blue !important;
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 415px) {
+    #Footer .footer_action .footer-action-button {
+        bottom: -27px;
+    }
+}
+
+@media only screen and (min-width: 415px) {
+    .footer-widget-about {
+        padding: 25px 20px 25px 30px !important;
+    }
+    .footer-action-map {
+        padding: 25px 20px 25px 30px !important;
+    }
+    .get_in_touch {
+        padding: 25px 20px 25px 30px;
+    }
+    #Footer .footer_action .footer-action-button {
+        margin-top: -30px;
+        bottom: -27px;
+        margin-left: 70px;
+    }
+}
