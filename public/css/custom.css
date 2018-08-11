@@ -30,3 +30,7 @@
         margin-left: 70px;
     }
 }
+
+.background-img-about {
+  background-image: url("http://assets.kearneyplumbinginc.com/about/about-background.jpg");
+}

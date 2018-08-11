@@ -1,0 +1,7 @@
+<header id="Header" class="<% if (state !== 'home') { %>background-img-about<% } %>">
+    <% include header-action-bar %>
+      <% include header-top-bar %>
+        <% if(state === 'home'){ %>
+            <% include header-main-slider %>
+                <% } %>
+</header>

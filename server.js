@@ -1,16 +1,16 @@
-'use strict';
+'use strict'
 
 /**
  * Module dependencies
  *
  */
-let express = require('express');
-let app = express();
-let router = require('./src/main.routes');
-let path = require('path');
-let favicon = require('serve-favicon');
-let bodyParser = require('body-parser');
-const port = process.env.PORT || 3000;
+let express = require('express')
+let app = express()
+let router = require('./src/main.routes')
+let path = require('path')
+let favicon = require('serve-favicon')
+let bodyParser = require('body-parser')
+const port = process.env.PORT || 3000
 
 // Serve favicon
 // app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')))
@@ -33,4 +33,3 @@ app.use(router)
 // Start application
 app.listen(port)
 console.log('Server listening on port', port)
-

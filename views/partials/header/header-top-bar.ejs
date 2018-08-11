@@ -1,0 +1,67 @@
+<div id="Top_bar">
+    <div class="container">
+        <div class="column one">
+            <div class="top_bar_left clearfix">
+                <div class="logo">
+                  <a id="logo" href="/" title="Kearney Plumbing Inc."><img class="scale-with-grid" src="<%= common.assets %>/kearney-plumbing-logo.png" alt="Kearney Plumbing Logo" />
+                                    </a>
+                </div>
+                <div class="menu_wrapper">
+                    <nav id="menu">
+                        <ul id="menu-main-menu" class="menu">
+                            <li class="<% if(state === 'home') { %>current-menu-item<% } %>">
+                                <a href="/"><span>Home</span></a>
+                            </li>
+                            <li class="<% if(state === 'about') { %>current-menu-item<% } %>">
+                                <a href="about"><span>About us</span></a>
+                            </li>
+                            <li class="<% if(state === 'services') { %>current-menu-item<% } %>">
+                                <a href="services"><span>Services</span></a>
+                            </li>
+                            <li class="<% if(state === 'projects') { %>current-menu-item<% } %>">
+                                <a href="projects"><span>Projects</span></a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="portfolio-full-grid.html"><span>Full Width</span></a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="portfolio-full-flat.html"><span>Flat</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-full-grid.html"><span>Grid</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-full-list.html"><span>List</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-full-masonry.html"><span>Masonry</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-full-masonry-flat.html"><span>Masonry Flat</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-full-filtering.html"><span>jQuery Filtering</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="<% if(state === 'contact') { %>current-menu-item<% } %>">
+                                <a href="contact"><span>Contact</span></a>
+                            </li>
+                        </ul>
+                    </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
+                </div>
+            </div>
+            <div class="top_bar_right">
+                <div class="top_bar_right_wrapper">
+                    <!-- Shopping cart icon-->
+                    <a id="header_cart" href="tel:<%= common.phone.src %>"><i class="icon-phone"></i></a>
+                    <a id="header_cart" href="mailto:<%= common.email %>"><i class="icon-mail"></i></a>
+                    <a id="header_cart" href="<%= common.social.facebook %>"><i class="icon-facebook"></i></a>
+                    <a id="search_button" href="<%= common.social.instagram %>"><i class="icon-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

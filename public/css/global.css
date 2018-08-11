@@ -5885,6 +5885,18 @@ a.icon_bar_dribbble span.b {
 	background: #ec4a89;
 	color: #fff
 }
+a.icon_bar_instagram span.b {
+	background: #ec4a89;
+	color: #fff
+}
+a.icon_bar_email span.b {
+	background: #cb2027;
+	color: #fff
+}
+a.icon_bar_phone span.b {
+	background: #ff0084;
+	color: #fff
+}
 /* Get in touch ---------------------------------------------------------------------- */
 
 .get_in_touch {
