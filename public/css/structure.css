@@ -1144,7 +1144,7 @@ body:not(.template-slider) #Header_wrapper.bg-fixed {
 }
 
 body:not(.template-slider) #Header {
-    min-height: 250px;
+    min-height: 500px;
 }
 
 .header-transparent .header_placeholder,.header-empty .header_placeholder {

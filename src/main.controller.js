@@ -32,7 +32,9 @@ module.exports.getAbout = (req, res) => {
   res.render('../views/pages/about', {
     common: commonConfig,
     state: aboutConfig.state,
-    subheader: aboutConfig.subheader
+    header: aboutConfig.header,
+    subheader: aboutConfig.subheader,
+    body: aboutConfig.body
   })
 }
 

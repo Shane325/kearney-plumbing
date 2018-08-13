@@ -11,13 +11,30 @@
     <div id="Wrapper">
         <div id="Header_wrapper">
             <% include ../partials/header/header %>
-            <% include ../partials/header/sub-header %>
+                <% include ../partials/header/sub-header %>
+        </div>
+        <div id="Content">
+            <div class="content_wrapper clearfix">
+                <div class="sections_group">
+                    <div class="entry-content">
+                        <div class="section flv_sections_11">
+                            <div class="section_wrapper clearfix">
+                                <div class="items_group clearfix">
+                                    <% include ../components/about/section-history %>
+                                        <% include ../components/divider %>
+                                            <% body.section_team.members.forEach(function(member) { %>
+                                                <% include ../components/about/section-team %>
+                                                    <% }) %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <% include ../partials/footer %>
     </div>
-
     <% include ../partials/foot %>
 </body>
 
 </html>
-

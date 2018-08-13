@@ -1,4 +1,4 @@
-<header id="Header" class="<% if (state !== 'home') { %>background-img-about<% } %>">
+<header id="Header" class="<% if (state !== 'home') { %> <%=header.class%> <% } %>">
     <% include header-action-bar %>
       <% include header-top-bar %>
         <% if(state === 'home'){ %>

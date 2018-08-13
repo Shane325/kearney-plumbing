@@ -1,0 +1,28 @@
+<div class="column one column_our_team_list margin-top-30">
+    <div class="team team_list clearfix">
+        <div class="column one-third container">
+            <div class="image_frame no_link scale-with-grid">
+                <div class="image_wrapper"><img class="scale-with-grid" src="<%= member.img.src %>" alt="<%= member.img.alt %>"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="column two-third">
+            <div class="desc_wrapper">
+                <h4>
+                    <%= member.displayName %>
+                </h4>
+                <p class="subtitle">
+                    <%= member.title %>
+                </p>
+                <hr class="hr_color" />
+                <div class="desc">
+                    <p>
+                        <span class="big"><%= member.description.primary %></span>
+                    </p>
+                    <%= member.description.secondary %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
