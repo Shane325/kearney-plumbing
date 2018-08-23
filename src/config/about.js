@@ -1,6 +1,7 @@
 'use strict'
 
 module.exports = {
+  pageTitle: 'About',
   state: 'about',
   header: {
     class: 'header-img-about'

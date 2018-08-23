@@ -4,6 +4,7 @@
  * Module dependencies
  *
  */
+let config = require('./config/config')
 let commonConfig = require('./config/common')
 let homeConfig = require('./config/home')
 let aboutConfig = require('./config/about')
@@ -18,7 +19,10 @@ let contactConfig = require('./config/contact')
  */
 module.exports.getHome = (req, res) => {
   res.render('../views/pages/index', {
+    js: config.lib.js,
+    css: config.lib.css,
     common: commonConfig,
+    pageTitle: homeConfig.pageTitle,
     state: homeConfig.state
   })
 }
@@ -30,7 +34,10 @@ module.exports.getHome = (req, res) => {
  */
 module.exports.getAbout = (req, res) => {
   res.render('../views/pages/about', {
+    js: config.lib.js,
+    css: config.lib.css,
     common: commonConfig,
+    pageTitle: aboutConfig.pageTitle,
     state: aboutConfig.state,
     header: aboutConfig.header,
     subheader: aboutConfig.subheader,
@@ -45,9 +52,14 @@ module.exports.getAbout = (req, res) => {
  */
 module.exports.getServices = (req, res) => {
   res.render('../views/pages/services', {
+    js: config.lib.js,
+    css: config.lib.css,
     common: commonConfig,
+    pageTitle: servicesConfig.pageTitle,
     state: servicesConfig.state,
-    subheader: servicesConfig.subheader
+    header: servicesConfig.header,
+    subheader: servicesConfig.subheader,
+    body: servicesConfig.body
   })
 }
 
@@ -58,8 +70,12 @@ module.exports.getServices = (req, res) => {
  */
 module.exports.getProjects = (req, res) => {
   res.render('../views/pages/projects', {
+    js: config.lib.js,
+    css: config.lib.css,
     common: commonConfig,
+    pageTitle: projectsConfig.pageTitle,
     state: projectsConfig.state,
+    header: projectsConfig.header,
     subheader: projectsConfig.subheader
   })
 }
@@ -71,8 +87,12 @@ module.exports.getProjects = (req, res) => {
  */
 module.exports.getContact = (req, res) => {
   res.render('../views/pages/contact', {
+    js: config.lib.js,
+    css: config.lib.css,
     common: commonConfig,
+    pageTitle: contactConfig.pageTitle,
     state: contactConfig.state,
+    header: contactConfig.header,
     subheader: contactConfig.subheader
   })
 }

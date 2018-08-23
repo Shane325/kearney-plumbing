@@ -7,10 +7,11 @@
 let express = require('express')
 let app = express()
 let router = require('./src/main.routes')
+let config = require('./src/config/config')
 let path = require('path')
 let favicon = require('serve-favicon')
 let bodyParser = require('body-parser')
-const port = process.env.PORT || 3000
+const port = process.env.PORT || config.port
 
 // Serve favicon
 // app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')))
