@@ -36,18 +36,24 @@ gulp.task('start', function () {
 gulp.task('styles', function () {
   return gulp.src('public/css/**/*.css')
     .pipe(autoprefixer('last 2 version'))
-    .pipe(concat('application.min.css'))
+    .pipe(gulp.dest('public/dist/css'))
+    .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())
-    .pipe(gulp.dest('public/dist'))
+    .pipe(gulp.dest('public/dist/css'))
 })
 
 // Scripts
 gulp.task('scripts', function () {
-  return gulp.src(['public/js/jquery-2.1.4.min.js', 'public/js/**/*.js', 'public/plugins/**/*.js'])
-    .pipe(concat('application.min.js'))
+  return gulp.src(['public/js/jquery-2.1.4.min.js', 'public/js/**/*.js'])
+    .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()) })
-    .pipe(gulp.dest('public/dist'))
+    .pipe(gulp.dest('public/dist/js'))
+})
+
+// Plugins
+gulp.task('plugins', function () {
+  return gulp.src('public/plugins/**/*.js')
+    .pipe(gulp.dest('public/dist/plugins'))
 })
 
 // Images
@@ -63,8 +69,8 @@ gulp.task('images', function () {
 
 // Fonts
 gulp.task('fonts', function () {
-  return gulp.src(['public/css/fonts/*.woff', 'public/css/fonts/*.ttf'])
-    .pipe(gulp.dest('public/dist/fonts'))
+  return gulp.src(['public/css/**/*.woff', 'public/css/**/*.ttf'])
+    .pipe(gulp.dest('public/dist/css'))
 })
 
 // Clean
@@ -74,7 +80,7 @@ gulp.task('clean', function () {
 
 // Run the project in production mode
 gulp.task('prod', function (done) {
-  runSequence('clean', ['styles', 'scripts', 'images', 'fonts'], 'start:prod', done)
+  runSequence('clean', ['styles', 'scripts', 'plugins', 'images', 'fonts'], 'start:prod', done)
 })
 
 // Run the project in development / default mode

@@ -10,6 +10,7 @@ let homeConfig = require('./config/home')
 let aboutConfig = require('./config/about')
 let servicesConfig = require('./config/services')
 let projectsConfig = require('./config/projects')
+let projectConfig = require('./config/project')
 let contactConfig = require('./config/contact')
 
 /**
@@ -76,7 +77,25 @@ module.exports.getProjects = (req, res) => {
     pageTitle: projectsConfig.pageTitle,
     state: projectsConfig.state,
     header: projectsConfig.header,
-    subheader: projectsConfig.subheader
+    subheader: projectsConfig.subheader,
+    projects: projectsConfig.projects
+  })
+}
+
+/**
+ * Return project page
+ *
+ * @returns - renders project page
+ */
+module.exports.getProject = (req, res) => {
+  res.render('../views/pages/project', {
+    js: config.lib.js,
+    css: config.lib.css,
+    common: commonConfig,
+    pageTitle: projectConfig.pageTitle,
+    state: projectConfig.state,
+    header: projectConfig.header,
+    subheader: projectConfig.subheader
   })
 }
 

@@ -1,0 +1,78 @@
+<div class="section">
+    <div class="section_wrapper clearfix">
+        <div class="column one column_portfolio">
+            <div class="portfolio_wrapper isotope_wrapper">
+                <ul class="portfolio_group lm_wrapper isotope grid">
+                    <% projects.forEach(function(project){ %>
+                    <li class="portfolio-item isotope-item <%=project.categories %> wide tall">
+                            <div class="portfolio-item-fw-bg flv_style_port_1">
+                                <div class="portfolio-item-fw-wrapper">
+                                    <div class="list_style_header">
+                                      <h3 class="entry-title"><a href=""><%= project.name %></a></h3>
+                                        <div class="links_wrapper">
+                                            <a href="#" class="button button_js portfolio_prev_js"><span class="button_icon"><i class="icon-up-open"></i></span></a>
+                                            <a href="#" class="button button_js portfolio_next_js"><span class="button_icon"><i class="icon-down-open"></i></span></a>
+                                            <a href="portfolio-single-mixed.html" class="button button_left button_theme button_js"><span class="button_icon"><i class="icon-link"></i></span>
+                                                <span
+                                                    class="button_label">Read more</span>
+                                                    </a>
+                                        </div>
+                                    </div>
+                                    <div class="image_frame scale-with-grid">
+                                        <div class="image_wrapper">
+                                            <a href="portfolio-single-mixed.html">
+                                                <div class="mask"></div><img width="576" height="450"
+                                                    src="images/portfolio_1-576x450.jpg"
+                                                    class="scale-with-grid wp-post-image"
+                                                    alt="portfolio_1" />
+                                            </a>
+                                            <div class="image_links triple">
+                                                <a href="images/portfolio_1.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                                                <a target="_blank" href="http://themeforest.net/" class="external"><i class="icon-forward"></i></a>
+                                                <a href="portfolio-single-mixed.html" class="link"><i class="icon-link"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title_wrapper">
+                                          <h5 class="entry-title"><a href=""><%= project.name %></a></h5>
+                                        </div>
+                                        <div class="details-wrapper">
+                                            <dl>
+                                                <dt>
+																		Client
+																	</dt>
+                                                <dd>
+                                                    BeantownThemes
+                                                </dd>
+                                                <dt>
+																		Date
+																	</dt>
+                                                <dd>
+                                                    May 13, 2014
+                                                </dd>
+                                                <dt>
+																		Website
+																	</dt>
+                                                <dd>
+                                                    <a target="_blank" href="http://themeforest.net/"><i class="icon-forward"></i>View website</a>
+                                                </dd>
+                                                <dd></dd>
+                                                <dd></dd>
+                                            </dl>
+                                        </div>
+                                        <div class="desc-wrapper">
+                                            In fermentum nulla eget iaculis fermentum? Sed ac libero eu metus lacinia pretium.
+                                            Praesent ultrices consequat neque eget
+                                            scelerisque.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <% }) %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
