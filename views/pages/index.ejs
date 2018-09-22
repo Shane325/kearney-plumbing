@@ -4,18 +4,27 @@
 <html lang="en">
 
 <head>
-    <% include ../partials/head %>
+  <% include ../partials/head %>
 </head>
 
 <body class="page-parent template-slider color-blue layout-full-width header-modern subheader-transparent sticky-header sticky-white subheader-title-left">
-    <div id="Wrapper">
-        <div id="Header_wrapper">
-            <% include ../partials/header/header %>
-        </div>
-        <% include ../partials/footer %>
+  <div id="Wrapper">
+    <div id="Header_wrapper">
+      <% include ../partials/header/header %>
     </div>
+    <div id="Content">
+      <div class="content_wrapper clearfix">
+        <div class="sections_group">
+          <div class="entry_content">
+            <% include ../components/home/home-content.ejs %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% include ../partials/footer %>
+  </div>
 
-    <% include ../partials/foot %>
+  <% include ../partials/foot %>
 </body>
 
 </html>
