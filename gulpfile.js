@@ -37,15 +37,26 @@ gulp.task('styles', function () {
   return gulp.src('public/css/**/*.css')
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest('public/dist/css'))
-    .pipe(rename({suffix: '.min'}))
+    .pipe(rename({
+      suffix: '.min'
+    }))
     .pipe(cssnano())
     .pipe(gulp.dest('public/dist/css'))
 })
 
 // Scripts
 gulp.task('scripts', function () {
-  return gulp.src(['public/js/jquery-2.1.4.min.js', 'public/js/**/*.js'])
-    .pipe(rename({suffix: '.min'}))
+  return gulp.src(['public/js/**/*.js', '!public/js/**/*.min.js'])
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(uglify())
+    .pipe(gulp.dest('public/dist/js'))
+})
+
+// Min Scripts
+gulp.task('min-scripts', function () {
+  return gulp.src(['public/js/jquery-2.1.4.min.js', 'public/js/**/*.min.js'])
     .pipe(uglify())
     .pipe(gulp.dest('public/dist/js'))
 })
@@ -80,7 +91,7 @@ gulp.task('clean', function () {
 
 // Run the project in production mode
 gulp.task('prod', function (done) {
-  runSequence('clean', ['styles', 'scripts', 'plugins', 'images', 'fonts'], 'start:prod', done)
+  runSequence('clean', ['styles', 'min-scripts', 'scripts', 'plugins', 'images', 'fonts'], 'start:prod', done)
 })
 
 // Run the project in development / default mode

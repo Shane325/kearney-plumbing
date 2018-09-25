@@ -4,6 +4,9 @@
   "description": "Welcome to Kearney Plumbing",
   "main": "server.js",
   "scripts": {
+    "start": "gulp",
+    "start:prod": "gulp prod",
+    "dev": "NODE_ENV=development nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
