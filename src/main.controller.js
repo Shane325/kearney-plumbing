@@ -95,7 +95,8 @@ module.exports.getProject = (req, res) => {
     pageTitle: projectConfig.pageTitle,
     state: projectConfig.state,
     header: projectConfig.header,
-    subheader: projectConfig.subheader
+    subheader: projectConfig.subheader,
+    project: req.project
   })
 }
 

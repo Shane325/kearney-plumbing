@@ -129,3 +129,7 @@
 .center-text {
   text-align: center;
 }
+
+.disabled-link {
+  pointer-events: none;
+}

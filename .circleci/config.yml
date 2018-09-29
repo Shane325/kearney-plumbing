@@ -48,3 +48,8 @@ jobs:
             docker push $DOCKER_HUB_ACCOUNT/kearney-plumbing:$CIRCLE_SHA1
             docker push $DOCKER_HUB_ACCOUNT/kearney-plumbing:latest
 
+      - run:
+          name: Deploy app to Digital Ocean Server via Docker
+          command: |
+            ssh -o StrictHostKeyChecking=no root@107.170.212.158 "/bin/bash ./deploy_app.sh $DOCKER_HUB_ACCOUNT/kearney-plimbing:$CIRCLE_SHA1"
+
