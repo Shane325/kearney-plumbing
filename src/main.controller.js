@@ -24,7 +24,8 @@ module.exports.getHome = (req, res) => {
     css: config.lib.css,
     common: commonConfig,
     pageTitle: homeConfig.pageTitle,
-    state: homeConfig.state
+    state: homeConfig.state,
+    projects: projectsConfig.projects
   })
 }
 

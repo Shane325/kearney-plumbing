@@ -1,0 +1,44 @@
+<div class="section" id="portfolioslider flv_sections_16">
+    <div class="section_wrapper clearfix">
+        <div class="items_group clearfix">
+            <!-- One full width row-->
+            <div class="column one column_column">
+                <div class="column_attr helper">
+                    <div class="helper_header">
+                        <h4 class="title">Projects</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section full-width flv_sections_16">
+    <div class="section_wrapper clearfix">
+        <div class="items_group clearfix">
+            <!-- One full width row-->
+            <div class="column one column_portfolio_slider">
+                <div class="portfolio_slider ">
+                    <a class="slider_nav slider_prev themebg" href="#"><i class="icon-left-open-big"></i></a><a class="slider_nav slider_next themebg"
+                        href="#"><i class="icon-right-open-big"></i></a>
+                    <ul class="portfolio_slider_ul">
+                        <% projects.forEach(function(project){ %>
+                        <li>
+                            <div class="image_frame scale-with-grid">
+                                <div class="image_wrapper">
+                                    <a href="/project/<%= project.id %>">
+                                        <div class="mask"></div><img src="<%= project.portfolioImg.src %>"
+                                            class="scale-with-grid wp-post-image" alt="<%= project.portfolioImg.alt %>" />
+                                    </a>
+                                    <div class="image_links single">
+                                        <a href="/project/<%= project.id %>" class="link"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <% }) %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
