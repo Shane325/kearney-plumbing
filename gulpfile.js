@@ -63,7 +63,7 @@ gulp.task('min-scripts', function () {
 
 // Plugins
 gulp.task('plugins', function () {
-  return gulp.src('public/plugins/**/*.js')
+  return gulp.src(['public/plugins/**/*.js', 'public/plugins/**/*.css'])
     .pipe(gulp.dest('public/dist/plugins'))
 })
 
