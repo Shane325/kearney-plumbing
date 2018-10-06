@@ -7,9 +7,10 @@ module.exports = {
       '/css/structure.css',
       '/css/be_style.css',
       '/css/custom.css',
+      '/plugins/rs-plugin/fonts/font-awesome/css/font-awesome.min.css',
       '/plugins/rs-plugin/css/settings.css',
-      'plugins/rs-plugin/css/layers.css',
-      'plugins/rs-plugin/css/navigation.css'
+      '/plugins/rs-plugin/css/layers.css',
+      '/plugins/rs-plugin/css/navigation.css'
     ],
     js: [
       '/js/jquery-2.1.4.min.js',
@@ -29,7 +30,7 @@ module.exports = {
       '/plugins/rs-plugin/js/extensions/revolution.extension.navigation.min.js',
       '/plugins/rs-plugin/js/extensions/revolution.extension.migration.min.js',
       '/plugins/rs-plugin/js/extensions/revolution.extension.parallax.min.js',
-      'plugins/rs-plugin/js/extensions/revolution.extension.carousel.min.js'
+      '/plugins/rs-plugin/js/extensions/revolution.extension.carousel.min.js'
     ]
   }
 }

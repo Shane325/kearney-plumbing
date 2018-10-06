@@ -6,7 +6,11 @@ module.exports = {
       '/dist/css/global.min.css',
       '/dist/css/structure.min.css',
       '/dist/css/be_style.min.css',
-      '/dist/css/custom.min.css'
+      '/dist/css/custom.min.css',
+      '/dist/plugins/rs-plugin/fonts/font-awesome/css/font-awesome.min.css',
+      '/dist/plugins/rs-plugin/css/settings.css',
+      '/dist/plugins/rs-plugin/css/layers.css',
+      '/dist/plugins/rs-plugin/css/navigation.css'
     ],
     js: [
       '/dist/js/jquery-2.1.4.min.js',
