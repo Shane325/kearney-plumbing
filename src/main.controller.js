@@ -22,6 +22,7 @@ module.exports.getHome = (req, res) => {
   res.render('../views/pages/index', {
     js: config.lib.js,
     css: config.lib.css,
+    assets: config.assets,
     common: commonConfig,
     pageTitle: homeConfig.pageTitle,
     state: homeConfig.state,

@@ -112,10 +112,6 @@
   }
 }
 
-.header-img-about {
-  background-image: url("http://assets.kearneyplumbinginc.com/about/header.jpg");
-}
-
 .call-to-action {
   background-color: rgba(0, 0, 0, .02);
   box-shadow: 0px 1px 1px #E5E5E5;
@@ -132,4 +128,24 @@
 
 .disabled-link {
   pointer-events: none;
+}
+
+body.about-page #Header_wrapper {
+  background-image: url('http://assets.kearneyplumbinginc.com/about-header-img.jpg');
+}
+
+body.services-page #Header_wrapper {
+  background-image: url('http://assets.kearneyplumbinginc.com/services-header-img.jpg');
+}
+
+body.projects-page #Header_wrapper {
+  background-image: url('http://assets.kearneyplumbinginc.com/projects-header-img.jpg');
+}
+
+body.project-page #Header_wrapper {
+  background-image: url('http://assets.kearneyplumbinginc.com/project-header-img.jpg');
+}
+
+body.contact-page #Header_wrapper {
+  background-image: url('http://assets.kearneyplumbinginc.com/contact-header-img.jpg');
 }

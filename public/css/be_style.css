@@ -8143,10 +8143,6 @@ table tr:hover td {
   background: none repeat scroll 0 0 transparent;
 }
 
-body:not(.template-slider) #Header_wrapper {
-  background-image: url(../images/home_slider.jpg);
-}
-
 #gallery-1 {
   margin: auto;
 }

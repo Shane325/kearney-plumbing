@@ -7,11 +7,11 @@
     <% include ../partials/head %>
 </head>
 
-<body class="color-blue layout-full-width header-classic subheader-transparent sticky-header sticky-white subheader-title-left">
+<body class="color-blue layout-full-width header-classic subheader-transparent sticky-header sticky-white subheader-title-left about-page">
     <div id="Wrapper">
         <div id="Header_wrapper">
             <% include ../partials/header/header %>
-                <% include ../partials/header/sub-header %>
+            <% include ../partials/header/sub-header %>
         </div>
         <div id="Content">
             <div class="content_wrapper clearfix">
@@ -21,10 +21,10 @@
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
                                     <% include ../components/about/section-history %>
-                                        <% include ../components/divider %>
-                                            <% body.section_team.members.forEach(function(member) { %>
-                                                <% include ../components/about/section-team %>
-                                                    <% }) %>
+                                    <% include ../components/divider %>
+                                    <% body.section_team.members.forEach(function(member) { %>
+                                    <% include ../components/about/section-team %>
+                                    <% }) %>
                                 </div>
                             </div>
                         </div>
