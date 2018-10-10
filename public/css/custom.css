@@ -78,6 +78,18 @@
   margin-bottom: 100px;
 }
 
+.font-size-19 {
+  font-size: 19px !important;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.bg-blue {
+  background-color: #2991d6 !important;
+}
+
 #Footer .footer_action .background-blue {
   background-color: blue !important;
 }

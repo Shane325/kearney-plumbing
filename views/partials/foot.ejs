@@ -1,42 +1,36 @@
 <% js.forEach(function(src){ %>
-    <script src="<%=src %>"></script>
-    <% }) %>
+<script src="<%=src %>"></script>
+<% }) %>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_ggeIaHotxgAOnE7jj692C6GmKElNFHA&v=3.exp"></script>
+<script>
+  function google_maps_5496904152035() {
+    var latlng = new google.maps.LatLng(37.751305, -122.451258);
+    var myOptions = {
+      zoom: 12,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      zoomControl: true,
+      mapTypeControl: false,
+      streetViewControl: false,
+      scrollwheel: false
+    };
+    var map = new google.maps.Map(document.getElementById(
+      "google-map-area-5496904152035"), myOptions);
+    var marker = new google.maps.Marker(
+      {
+        position: latlng,
+        map: map
+      });
+  }
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_ggeIaHotxgAOnE7jj692C6GmKElNFHA&v=3.exp&sensor=false"></script>
-
-        <script>
-            function google_maps_5496904152035()
-            {
-                var latlng = new google.maps.LatLng(37.751305, -122.451258);
-                var myOptions = {
-                    zoom: 12,
-                    center: latlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    zoomControl: true,
-                    mapTypeControl: false,
-                    streetViewControl: false,
-                    scrollwheel: false
-                };
-                var map = new google.maps.Map(document.getElementById(
-                    "google-map-area-5496904152035"), myOptions);
-                var marker = new google.maps.Marker(
-                {
-                    position: latlng,
-                    map: map
-                });
-            }
-
-
-            jQuery(document).ready(function($)
-            {
-                google_maps_5496904152035();
-            });
-        </script>
-
+  jQuery(document).ready(function ($) {
+    google_maps_5496904152035();
+  });
+</script>
 <script>
   var tpj = jQuery;
   var revapi20;
-  tpj(document).ready(function() {
+  tpj(document).ready(function () {
     if (tpj("#rev_slider_20_1").revolution == undefined) {
       revslider_showDoubleJqueryError("#rev_slider_20_1");
     } else {
@@ -74,10 +68,8 @@
     }
   }); /*ready*/
 </script>
-
-
 <script>
-  jQuery(window).load(function() {
+  jQuery(window).load(function () {
     var retina = window.devicePixelRatio > 1 ? true : false;
     if (retina) {
       var retinaEl = jQuery("#logo img");
@@ -87,3 +79,28 @@
     }
   });
 </script>
+<% if(state === 'contact'){ %>
+<script>
+  function google_maps_54a672a1c80e7() {
+    var latlng = new google.maps.LatLng(37.7513038, -122.4510947);
+    var myOptions = {
+      zoom: 13,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      zoomControl: true,
+      mapTypeControl: false,
+      streetViewControl: false,
+      scrollwheel: false
+    };
+    var map = new google.maps.Map(document.getElementById("google-map-area-54a672a1c80e7"), myOptions);
+    var marker = new google.maps.Marker({
+      position: latlng,
+      map: map
+    });
+  }
+
+  jQuery(document).ready(function ($) {
+    google_maps_54a672a1c80e7();
+  });
+</script>
+<% } %>
