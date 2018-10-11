@@ -1,5 +1,10 @@
 'use strict'
 
+/*
+ * Module dependencies
+ */
+let assets = require("./config").assets
+
 module.exports = {
   pageTitle: 'About',
   state: 'about',
@@ -26,14 +31,13 @@ module.exports = {
     section_team: {
       members: [{
         img: {
-          src: 'http://via.placeholder.com/380x300',
+          src: assets + '/about/brian.jpg',
           alt: 'Brian Kearney'
         },
         displayName: 'Brian Kearney',
         title: 'Owner',
         description: {
-          primary: 'Before starting up the company Brian had previously worked in the industry for 12 years. His 15 years of experience covers apartment buildings, condominiums and commercial buildings.',
-          secondary: 'Continually initiate wireless architectures before virtual niches. Seamlessly leverage other\'s competitive systems with user friendly e - tailers.Globally benchmark installed base customer service after granular methods of empowerment.Synergistically maximize orthogonal portals without compelling e - commerce.Monotonectally fabricate exceptional sources with enabled opportunities.'
+          primary: 'Before starting up the company Brian had previously worked in the industry for 12 years. His 15 years of experience covers apartment buildings, condominiums and commercial buildings.'
         }
       }]
     }

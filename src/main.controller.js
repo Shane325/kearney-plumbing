@@ -44,7 +44,8 @@ module.exports.getAbout = (req, res) => {
     state: aboutConfig.state,
     header: aboutConfig.header,
     subheader: aboutConfig.subheader,
-    body: aboutConfig.body
+    body: aboutConfig.body,
+    projects: projectsConfig.projects
   })
 }
 
@@ -57,12 +58,14 @@ module.exports.getServices = (req, res) => {
   res.render('../views/pages/services', {
     js: config.lib.js,
     css: config.lib.css,
+    assets: config.assets,
     common: commonConfig,
     pageTitle: servicesConfig.pageTitle,
     state: servicesConfig.state,
     header: servicesConfig.header,
     subheader: servicesConfig.subheader,
-    body: servicesConfig.body
+    body: servicesConfig.body,
+    projects: projectsConfig.projects
   })
 }
 
@@ -98,7 +101,8 @@ module.exports.getProject = (req, res) => {
     state: projectConfig.state,
     header: projectConfig.header,
     subheader: projectConfig.subheader,
-    project: req.project
+    project: req.project,
+    projects: projectsConfig.projects
   })
 }
 
@@ -115,6 +119,7 @@ module.exports.getContact = (req, res) => {
     pageTitle: contactConfig.pageTitle,
     state: contactConfig.state,
     header: contactConfig.header,
-    subheader: contactConfig.subheader
+    subheader: contactConfig.subheader,
+    projects: projectsConfig.projects
   })
 }

@@ -3,8 +3,9 @@
         <div class="column one">
             <div class="top_bar_left clearfix">
                 <div class="logo">
-                  <a id="logo" href="/" title="Kearney Plumbing Inc."><img class="scale-with-grid" src="<%= common.assets %>/kearney-plumbing-logo.jpg" alt="Kearney Plumbing Logo" />
-                                    </a>
+                    <a id="logo" href="/" title="Kearney Plumbing Inc."><img class="scale-with-grid" src="<%= common.assets %>/kearney-plumbing-logo.jpg"
+                            alt="Kearney Plumbing Logo" />
+                    </a>
                 </div>
                 <div class="menu_wrapper">
                     <nav id="menu">
@@ -13,41 +14,60 @@
                                 <a href="/"><span>Home</span></a>
                             </li>
                             <li class="<% if(state === 'about') { %>current-menu-item<% } %>">
-                                <a href="about"><span>About us</span></a>
+                                <a href="/about"><span>About us</span></a>
                             </li>
                             <li class="<% if(state === 'services') { %>current-menu-item<% } %>">
-                                <a href="services"><span>Services</span></a>
+                                <a href="/services"><span>Services</span></a>
                             </li>
-                            <li class="<% if(state === 'projects') { %>current-menu-item<% } %>">
-                                <a href="projects"><span>Projects</span></a>
+                            <li class="<% if(state === 'projects' || state === 'project') { %>current-menu-item<% } %>">
+                                <a href="/projects"><span>Projects</span></a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="portfolio-full-grid.html"><span>Full Width</span></a>
+                                        <a href="/projects"><span>Commercial</span></a>
                                         <ul class="sub-menu">
+                                            <% var commercial = projects.filter(function(project) { %>
+                                            <% return project.categories === 'project-commercial' %>
+                                            <% }) %>
+                                            <% commercial.forEach(function(project) { %>
                                             <li>
-                                                <a href="portfolio-full-flat.html"><span>Flat</span></a>
+                                                <a href="/project/<%= project.id %>"><span>
+                                                        <%= project.name %></span></a>
                                             </li>
+                                            <% }) %>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/projects"><span>Residential</span></a>
+                                        <ul class="sub-menu">
+                                            <% var residential = projects.filter(function(project) { %>
+                                            <% return project.categories === 'project-residential' %>
+                                            <% }) %>
+                                            <% residential.forEach(function(project) { %>
                                             <li>
-                                                <a href="portfolio-full-grid.html"><span>Grid</span></a>
+                                                <a href="/project/<%= project.id %>"><span>
+                                                        <%= project.name %></span></a>
                                             </li>
+                                            <% }) %>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/projects"><span>Radiant Heat</span></a>
+                                        <ul class="sub-menu">
+                                            <% var radiantHeat = projects.filter(function(project) { %>
+                                            <% return project.categories === 'project-radiant-heat' %>
+                                            <% }) %>
+                                            <% radiantHeat.forEach(function(project) { %>
                                             <li>
-                                                <a href="portfolio-full-list.html"><span>List</span></a>
+                                                <a href="/project/<%= project.id %>"><span>
+                                                        <%= project.name %></span></a>
                                             </li>
-                                            <li>
-                                                <a href="portfolio-full-masonry.html"><span>Masonry</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-full-masonry-flat.html"><span>Masonry Flat</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-full-filtering.html"><span>jQuery Filtering</span></a>
-                                            </li>
+                                            <% }) %>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             <li class="<% if(state === 'contact') { %>current-menu-item<% } %>">
-                                <a href="contact"><span>Contact</span></a>
+                                <a href="/contact"><span>Contact</span></a>
                             </li>
                         </ul>
                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>

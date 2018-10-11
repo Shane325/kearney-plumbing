@@ -268,7 +268,7 @@ module.exports = {
     {
       id: 5,
       name: "Project 5",
-      categories: "project-commercial",
+      categories: "project-residential",
       portfolioImg: {
         src: "https://via.placeholder.com/1200x800",
         alt: "image"
@@ -345,7 +345,7 @@ module.exports = {
     {
       id: 6,
       name: "Project 6",
-      categories: "project-commercial",
+      categories: "project-radiant-heat",
       portfolioImg: {
         src: "https://via.placeholder.com/1200x800",
         alt: "image"

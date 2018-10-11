@@ -17,7 +17,7 @@ module.exports = {
       url: 'projects'
     },
     {
-      name: 'Project',
+      name: 'Project details',
       url: null
     }]
   }
