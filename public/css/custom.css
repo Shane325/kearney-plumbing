@@ -78,6 +78,10 @@
   margin-bottom: 100px;
 }
 
+.font-size-16 {
+  font-size: 16px;
+}
+
 .font-size-19 {
   font-size: 19px !important;
 }
@@ -139,24 +143,24 @@ body.contact-page #Header_wrapper {
 */
 
 @media only screen and (max-width: 768px) {
-  
-}
-
-@media only screen and (max-width: 415px) {
   #Footer .footer_action .footer-action-button {
     bottom: -13px;
-  }
-
-  #Top_bar .top_bar_right {
-    display: none;
   }
 
   .hidden-on-mobile {
     display: none;
   }
 
+  
+}
+
+@media only screen and (max-width: 415px) {
   .cta-button {
     margin-top: 20px;
+  }
+
+  #Top_bar .top_bar_right {
+    display: none;
   }
 }
 

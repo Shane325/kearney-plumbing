@@ -104,10 +104,6 @@ module.exports = {
         {
           src: assets + "/projects/20th-ave_8.jpg",
           alt: "20th ave img 8"
-        },
-        {
-          src: assets + "/projects/20th-ave_9.jpg",
-          alt: "20th ave img 9"
         }
       ]
     },
@@ -190,13 +186,13 @@ module.exports = {
     },
     {
       id: 4,
-      name: "Project 4",
-      categories: "project-commercial",
+      name: "26th Avenue",
+      categories: "project-residential",
       portfolioImg: {
-        src: "https://via.placeholder.com/1200x800",
-        alt: "image"
+        src: assets + "/projects/26th-ave_1.jpg",
+        alt: "26th Ave img 1"
       },
-      type: "Commercial",
+      type: "Residential",
       address: "San Francisco, CA",
       client: "123 Builders",
       duration: "9 weeks",
@@ -204,76 +200,48 @@ module.exports = {
         "Progressively enhance prospective networks rather than leading-edge niches. Credibly transition cutting-edge solutions before user-centric process improvements. Synergistically embrace cross-media models vis-a-vis multidisciplinary mindshare. Interactively reintermediate cross-platform functionalities and plug-and-play e-tailers. Phosfluorescently promote magnetic niche markets whereas optimal services.",
       imgs: [
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/26th-ave_1.jpg",
+          alt: "26th ave img 1"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/26th-ave_2.jpg",
+          alt: "26th ave img 2"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/26th-ave_3.jpg",
+          alt: "26th ave img 3"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/26th-ave_4.jpg",
+          alt: "26th ave img 4"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/26th-ave_5.jpg",
+          alt: "26th ave img 5"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/26th-ave_6.jpg",
+          alt: "26th ave img 6"
+        },
+        {
+          src: assets + "/projects/26th-ave_7.jpg",
+          alt: "26th ave img 7"
+        },
+        {
+          src: assets + "/projects/26th-ave_8.jpg",
+          alt: "26th ave img 8"
         }
       ]
     },
     {
       id: 5,
-      name: "Project 5",
-      categories: "project-residential",
+      name: "35th Avenue",
+      categories: "project-radiant-heat",
       portfolioImg: {
-        src: "https://via.placeholder.com/1200x800",
-        alt: "image"
+        src: assets + "/projects/35th-ave_1.jpg",
+        alt: "35th ave img 1"
       },
-      type: "Commercial",
+      type: "Radiant Heat",
       address: "San Francisco, CA",
       client: "123 Builders",
       duration: "9 weeks",
@@ -281,76 +249,32 @@ module.exports = {
         "Progressively enhance prospective networks rather than leading-edge niches. Credibly transition cutting-edge solutions before user-centric process improvements. Synergistically embrace cross-media models vis-a-vis multidisciplinary mindshare. Interactively reintermediate cross-platform functionalities and plug-and-play e-tailers. Phosfluorescently promote magnetic niche markets whereas optimal services.",
       imgs: [
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/35th-ave_1.jpg",
+          alt: "35th ave img 1"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/35th-ave_2.jpg",
+          alt: "35th ave img 2"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/35th-ave_3.jpg",
+          alt: "35th ave img 3"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
-        },
-        {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
-        },
-        {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/35th-ave_4.jpg",
+          alt: "35th ave img 4"
         }
       ]
     },
     {
       id: 6,
-      name: "Project 6",
-      categories: "project-radiant-heat",
+      name: "Aquavista Way",
+      categories: "project-residential",
       portfolioImg: {
-        src: "https://via.placeholder.com/1200x800",
-        alt: "image"
+        src: assets + "/projects/aquavista-way_1.jpg",
+        alt: "Aquavista way img 1"
       },
-      type: "Commercial",
+      type: "Residential",
       address: "San Francisco, CA",
       client: "123 Builders",
       duration: "9 weeks",
@@ -358,64 +282,28 @@ module.exports = {
         "Progressively enhance prospective networks rather than leading-edge niches. Credibly transition cutting-edge solutions before user-centric process improvements. Synergistically embrace cross-media models vis-a-vis multidisciplinary mindshare. Interactively reintermediate cross-platform functionalities and plug-and-play e-tailers. Phosfluorescently promote magnetic niche markets whereas optimal services.",
       imgs: [
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/aquavista-way_1.jpg",
+          alt: "Aquavista way img 1"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/aquavista-way_2.jpg",
+          alt: "Aquavista way img 2"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/aquavista-way_3.jpg",
+          alt: "Aquavista way img 3"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/aquavista-way_4.jpg",
+          alt: "Aquavista way img 4"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/aquavista-way_5.jpg",
+          alt: "Aquavista way img 5"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/aquavista-way_6.jpg",
+          alt: "Aquavista way img 6"
         }
       ]
     }
