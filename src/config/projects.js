@@ -35,10 +35,8 @@ module.exports = {
       },
       type: "Radiant Heat",
       address: "San Francisco, CA",
-      client: "123 Builders",
-      duration: "9 weeks",
-      info:
-        "Progressively enhance prospective networks rather than leading-edge niches. Credibly transition cutting-edge solutions before user-centric process improvements. Synergistically embrace cross-media models vis-a-vis multidisciplinary mindshare. Interactively reintermediate cross-platform functionalities and plug-and-play e-tailers. Phosfluorescently promote magnetic niche markets whereas optimal services.",
+      contractor: "P3 Construction",
+      info: "More info about this project coming soon.",
       imgs: [
         {
           src: assets + "/projects/11th-ave_1.jpg",
@@ -61,17 +59,15 @@ module.exports = {
     {
       id: 2,
       name: "20th Avenue",
-      categories: "project-residential",
+      categories: "project-radiant-heat",
       portfolioImg: {
         src: assets + "/projects/20th-ave_1.jpg",
         alt: "20th ave img"
       },
-      type: "Residential",
+      type: "Radiant Heat",
       address: "San Francisco, CA",
-      client: "123 Builders",
-      duration: "9 weeks",
-      info:
-        "Progressively enhance prospective networks rather than leading-edge niches. Credibly transition cutting-edge solutions before user-centric process improvements. Synergistically embrace cross-media models vis-a-vis multidisciplinary mindshare. Interactively reintermediate cross-platform functionalities and plug-and-play e-tailers. Phosfluorescently promote magnetic niche markets whereas optimal services.",
+      contractor: "Home Owner",
+      info: "More info about this project coming soon.",
       imgs: [
         {
           src: assets + "/projects/20th-ave_1.jpg",
@@ -109,78 +105,44 @@ module.exports = {
     },
     {
       id: 3,
-      name: "Hartfort Street",
-      categories: "project-commercial",
+      name: "Hartford Street",
+      categories: "project-radiant-heat",
       portfolioImg: {
-        src: "https://via.placeholder.com/1200x800",
-        alt: "image"
+        src: assets + "/projects/hartford_1.jpg",
+        alt: "Hartford img 1"
       },
-      type: "Commercial",
+      type: "Radiant Heat",
       address: "San Francisco, CA",
-      client: "123 Builders",
-      duration: "9 weeks",
-      info:
-        "Progressively enhance prospective networks rather than leading-edge niches. Credibly transition cutting-edge solutions before user-centric process improvements. Synergistically embrace cross-media models vis-a-vis multidisciplinary mindshare. Interactively reintermediate cross-platform functionalities and plug-and-play e-tailers. Phosfluorescently promote magnetic niche markets whereas optimal services.",
+      contractor: "Bannon Construction",
+      info: "More info about this project coming soon.",
       imgs: [
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/hartford_1.jpg",
+          alt: "Hartford img 1"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/hartford_2.jpg",
+          alt: "Hartford img 2"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/hartford_3.jpg",
+          alt: "Hartford img 3"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/hartford_4.jpg",
+          alt: "Hartford img 4"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/hartford_5.jpg",
+          alt: "Hartford img 5"
         },
         {
-          small: {
-            src: "https://via.placeholder.com/300x300",
-            alt: ""
-          },
-          large: {
-            src: "https://via.placeholder.com/1200x800",
-            alt: ""
-          }
+          src: assets + "/projects/hartford_6.jpg",
+          alt: "Hartford img 6"
+        },
+        {
+          src: assets + "/projects/hartford_7.jpg",
+          alt: "Hartford img 7"
         }
       ]
     },
@@ -194,10 +156,8 @@ module.exports = {
       },
       type: "Residential",
       address: "San Francisco, CA",
-      client: "123 Builders",
-      duration: "9 weeks",
-      info:
-        "Progressively enhance prospective networks rather than leading-edge niches. Credibly transition cutting-edge solutions before user-centric process improvements. Synergistically embrace cross-media models vis-a-vis multidisciplinary mindshare. Interactively reintermediate cross-platform functionalities and plug-and-play e-tailers. Phosfluorescently promote magnetic niche markets whereas optimal services.",
+      contractor: "Stonebridge Construction",
+      info: "More info about this project coming soon.",
       imgs: [
         {
           src: assets + "/projects/26th-ave_1.jpg",
@@ -243,10 +203,8 @@ module.exports = {
       },
       type: "Radiant Heat",
       address: "San Francisco, CA",
-      client: "123 Builders",
-      duration: "9 weeks",
-      info:
-        "Progressively enhance prospective networks rather than leading-edge niches. Credibly transition cutting-edge solutions before user-centric process improvements. Synergistically embrace cross-media models vis-a-vis multidisciplinary mindshare. Interactively reintermediate cross-platform functionalities and plug-and-play e-tailers. Phosfluorescently promote magnetic niche markets whereas optimal services.",
+      contractor: "Home Owner",
+      info: "More info about this project coming soon.",
       imgs: [
         {
           src: assets + "/projects/35th-ave_1.jpg",
@@ -276,10 +234,8 @@ module.exports = {
       },
       type: "Residential",
       address: "San Francisco, CA",
-      client: "123 Builders",
-      duration: "9 weeks",
-      info:
-        "Progressively enhance prospective networks rather than leading-edge niches. Credibly transition cutting-edge solutions before user-centric process improvements. Synergistically embrace cross-media models vis-a-vis multidisciplinary mindshare. Interactively reintermediate cross-platform functionalities and plug-and-play e-tailers. Phosfluorescently promote magnetic niche markets whereas optimal services.",
+      contractor: "Home Owner",
+      info: "More info about this project coming soon.",
       imgs: [
         {
           src: assets + "/projects/aquavista-way_1.jpg",
@@ -304,6 +260,177 @@ module.exports = {
         {
           src: assets + "/projects/aquavista-way_6.jpg",
           alt: "Aquavista way img 6"
+        }
+      ]
+    },
+    {
+      id: 7,
+      name: "Denslowe",
+      categories: "project-residential",
+      portfolioImg: {
+        src: assets + "/placeholder.png",
+        alt: "img 1"
+      },
+      type: "Residential",
+      address: "San Francisco, CA",
+      contractor: "Carroll Construction",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/placeholder.png",
+          alt: "img 1"
+        }
+      ]
+    },
+    {
+      id: 8,
+      name: "Hotel San Francisco",
+      categories: "project-commercial",
+      portfolioImg: {
+        src: assets + "/placeholder.png",
+        alt: "img 1"
+      },
+      type: "Commercial",
+      address: "San Francisco, CA",
+      contractor: "CDR Construction",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/placeholder.png",
+          alt: "img 1"
+        }
+      ]
+    },
+    {
+      id: 9,
+      name: "St. Germaine Ave.",
+      categories: "project-radiant-heat",
+      portfolioImg: {
+        src: assets + "/placeholder.png",
+        alt: "img 1"
+      },
+      type: "Radiant Heat",
+      address: "San Francisco, CA",
+      contractor: "Dream Castle Construction",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/placeholder.png",
+          alt: "img 1"
+        }
+      ]
+    },
+    {
+      id: 10,
+      name: "Loma Vista",
+      categories: "project-residential",
+      portfolioImg: {
+        src: assets + "/placeholder.png",
+        alt: "img 1"
+      },
+      type: "Residential",
+      address: "San Francisco, CA",
+      contractor: "Home Owner",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/placeholder.png",
+          alt: "img 1"
+        }
+      ]
+    },
+    {
+      id: 11,
+      name: "Pacific Ave.",
+      categories: "project-residential",
+      portfolioImg: {
+        src: assets + "/placeholder.png",
+        alt: "img 1"
+      },
+      type: "Residential",
+      address: "San Francisco, CA",
+      contractor: "Larksbur Builders",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/placeholder.png",
+          alt: "img 1"
+        }
+      ]
+    },
+    {
+      id: 12,
+      name: "Pier 23",
+      categories: "project-commercial",
+      portfolioImg: {
+        src: assets + "/placeholder.png",
+        alt: "img 1"
+      },
+      type: "Commercial",
+      address: "San Francisco, CA",
+      contractor: "Trinet Construction",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/placeholder.png",
+          alt: "img 1"
+        }
+      ]
+    },
+    {
+      id: 13,
+      name: "Pier 33",
+      categories: "project-commercial",
+      portfolioImg: {
+        src: assets + "/placeholder.png",
+        alt: "img 1"
+      },
+      type: "Commercial",
+      address: "San Francisco, CA",
+      contractor: "Restaurant Owner",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/placeholder.png",
+          alt: "img 1"
+        }
+      ]
+    },
+    {
+      id: 14,
+      name: "Sanchez St.",
+      categories: "project-residential",
+      portfolioImg: {
+        src: assets + "/placeholder.png",
+        alt: "img 1"
+      },
+      type: "Residential",
+      address: "San Francisco, CA",
+      contractor: "Sting Ray Construction",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/placeholder.png",
+          alt: "img 1"
+        }
+      ]
+    },
+    {
+      id: 15,
+      name: "Santa Ysabel Ave.",
+      categories: "project-residential",
+      portfolioImg: {
+        src: assets + "/placeholder.png",
+        alt: "img 1"
+      },
+      type: "Residential",
+      address: "San Francisco, CA",
+      contractor: "Right Angle Construction",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/placeholder.png",
+          alt: "img 1"
         }
       ]
     }

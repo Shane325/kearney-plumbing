@@ -8,6 +8,13 @@
   </div>
   <div class="column one-second column_column">
     <div class="column_attr ">
+        <div class="column one-third column_column">
+            <h5 class="flv_margin_b_5">Project name:</h5>
+            <p>
+              <i class="icon-cog-line"></i>
+              <%= project.name %>
+            </p>
+          </div>
       <div class="column one-third column_column">
         <h5 class="flv_margin_b_5">Project type:</h5>
         <p>
@@ -15,18 +22,12 @@
           <%= project.type %>
         </p>
       </div>
+      
       <div class="column one-third column_column">
-        <h5 class="flv_margin_b_5">Client:</h5>
+        <h5 class="flv_margin_b_5">Contractor:</h5>
         <p>
-          <i class="icon-vcard"></i>
-          <%= project.client %>
-        </p>
-      </div>
-      <div class="column one-third column_column">
-        <h5 class="flv_margin_b_5">Duration:</h5>
-        <p>
-          <i class="icon-back-in-time"></i>
-          <%= project.duration %>
+          <i class="icon-users"></i>
+          <%= project.contractor %>
         </p>
       </div>
     </div>

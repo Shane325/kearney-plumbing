@@ -16,6 +16,7 @@ router.get('/services', controller.getServices)
 router.get('/projects', controller.getProjects)
 router.get('/project/:projectId', controller.getProject)
 router.get('/contact', controller.getContact)
+router.post('/contact/send-email', controller.sendContactEmail)
 
 // Route middleware
 router.param('projectId', service.getProjectById)
