@@ -268,8 +268,8 @@ module.exports = {
       name: "Denslowe",
       categories: "project-residential",
       portfolioImg: {
-        src: assets + "/placeholder.png",
-        alt: "img 1"
+        src: assets + "/projects/denslowe_1.jpg",
+        alt: "Denslowe img 1"
       },
       type: "Residential",
       address: "San Francisco, CA",
@@ -277,9 +277,37 @@ module.exports = {
       info: "More info about this project coming soon.",
       imgs: [
         {
-          src: assets + "/placeholder.png",
-          alt: "img 1"
-        }
+          src: assets + "/projects/denslowe_1.jpg",
+          alt: "Denslowe img 1"
+        },
+        {
+          src: assets + "/projects/denslowe_2.jpg",
+          alt: "Denslowe img 2"
+        },
+        {
+          src: assets + "/projects/denslowe_3.jpg",
+          alt: "Denslowe img 3"
+        },
+        {
+          src: assets + "/projects/denslowe_4.jpg",
+          alt: "Denslowe img 4"
+        },
+        {
+          src: assets + "/projects/denslowe_5.jpg",
+          alt: "Denslowe img 5"
+        },
+        {
+          src: assets + "/projects/denslowe_6.jpg",
+          alt: "Denslowe img 6"
+        },
+        {
+          src: assets + "/projects/denslowe_7.jpg",
+          alt: "Denslowe img 7"
+        },
+        {
+          src: assets + "/projects/denslowe_8.jpg",
+          alt: "Denslowe img 8"
+        },
       ]
     },
     {
@@ -287,8 +315,8 @@ module.exports = {
       name: "Hotel San Francisco",
       categories: "project-commercial",
       portfolioImg: {
-        src: assets + "/placeholder.png",
-        alt: "img 1"
+        src: assets + "/projects/hotel-san-francisco_1.jpg",
+        alt: "Hotel San Francisco img 1"
       },
       type: "Commercial",
       address: "San Francisco, CA",
@@ -296,9 +324,21 @@ module.exports = {
       info: "More info about this project coming soon.",
       imgs: [
         {
-          src: assets + "/placeholder.png",
-          alt: "img 1"
-        }
+          src: assets + "/projects/hotel-san-francisco_1.jpg",
+          alt: "Hotel San Francisco img 1"
+        },
+        {
+          src: assets + "/projects/hotel-san-francisco_2.jpg",
+          alt: "Hotel San Francisco img 2"
+        },
+        {
+          src: assets + "/projects/hotel-san-francisco_3.jpg",
+          alt: "Hotel San Francisco img 3"
+        },
+        {
+          src: assets + "/projects/hotel-san-francisco_4.jpg",
+          alt: "Hotel San Francisco img 4"
+        },
       ]
     },
     {
