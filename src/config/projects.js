@@ -530,8 +530,8 @@ module.exports = {
       name: "Pier 33",
       categories: "project-commercial",
       portfolioImg: {
-        src: assets + "/placeholder.png",
-        alt: "img 1"
+        src: assets + "/projects/pier_33_1.jpg",
+        alt: "Pier 33 img 1"
       },
       type: "Commercial",
       address: "San Francisco, CA",
@@ -539,8 +539,36 @@ module.exports = {
       info: "More info about this project coming soon.",
       imgs: [
         {
-          src: assets + "/placeholder.png",
-          alt: "img 1"
+          src: assets + "/projects/pier_33_1.jpg",
+          alt: "Pier 33 img 1"
+        },
+        {
+          src: assets + "/projects/pier_33_2.jpg",
+          alt: "Pier 33 img 2"
+        },
+        {
+          src: assets + "/projects/pier_33_3.jpg",
+          alt: "Pier 33 img 3"
+        },
+        {
+          src: assets + "/projects/pier_33_4.jpg",
+          alt: "Pier 33 img 4"
+        },
+        {
+          src: assets + "/projects/pier_33_5.jpg",
+          alt: "Pier 33 img 5"
+        },
+        {
+          src: assets + "/projects/pier_33_6.jpg",
+          alt: "Pier 33 img 6"
+        },
+        {
+          src: assets + "/projects/pier_33_7.jpg",
+          alt: "Pier 33 img 7"
+        },
+        {
+          src: assets + "/projects/pier_33_8.jpg",
+          alt: "Pier 33 img 8"
         }
       ]
     },
@@ -549,8 +577,8 @@ module.exports = {
       name: "Sanchez St.",
       categories: "project-residential",
       portfolioImg: {
-        src: assets + "/placeholder.png",
-        alt: "img 1"
+        src: assets + "/projects/sanchez_1.jpg",
+        alt: "Sanchez img 1"
       },
       type: "Residential",
       address: "San Francisco, CA",
@@ -558,8 +586,28 @@ module.exports = {
       info: "More info about this project coming soon.",
       imgs: [
         {
-          src: assets + "/placeholder.png",
-          alt: "img 1"
+          src: assets + "/projects/sanchez_1.jpg",
+          alt: "Sanchez img 1"
+        },
+        {
+          src: assets + "/projects/sanchez_2.jpg",
+          alt: "Sanchez img 2"
+        },
+        {
+          src: assets + "/projects/sanchez_3.jpg",
+          alt: "Sanchez img 3"
+        },
+        {
+          src: assets + "/projects/sanchez_4.jpg",
+          alt: "Sanchez img 4"
+        },
+        {
+          src: assets + "/projects/sanchez_5.jpg",
+          alt: "Sanchez img 5"
+        },
+        {
+          src: assets + "/projects/sanchez_6.jpg",
+          alt: "Sanchez img 6"
         }
       ]
     },
@@ -568,8 +616,8 @@ module.exports = {
       name: "Santa Ysabel Ave.",
       categories: "project-residential",
       portfolioImg: {
-        src: assets + "/placeholder.png",
-        alt: "img 1"
+        src: assets + "/projects/santa_ysabel_1.jpg",
+        alt: "Santa Ysabel img 1"
       },
       type: "Residential",
       address: "San Francisco, CA",
@@ -577,8 +625,28 @@ module.exports = {
       info: "More info about this project coming soon.",
       imgs: [
         {
-          src: assets + "/placeholder.png",
-          alt: "img 1"
+          src: assets + "/projects/santa_ysabel_1.jpg",
+          alt: "Santa Ysabel img 1"
+        },
+        {
+          src: assets + "/projects/santa_ysabel_2.jpg",
+          alt: "Santa Ysabel img 2"
+        },
+        {
+          src: assets + "/projects/santa_ysabel_3.jpg",
+          alt: "Santa Ysabel img 3"
+        },
+        {
+          src: assets + "/projects/santa_ysabel_4.jpg",
+          alt: "Santa Ysabel img 4"
+        },
+        {
+          src: assets + "/projects/santa_ysabel_5.jpg",
+          alt: "Santa Ysabel img 5"
+        },
+        {
+          src: assets + "/projects/santa_ysabel_6.jpg",
+          alt: "Santa Ysabel img 6"
         }
       ]
     }
