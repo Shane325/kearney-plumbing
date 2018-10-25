@@ -346,8 +346,8 @@ module.exports = {
       name: "St. Germaine Ave.",
       categories: "project-radiant-heat",
       portfolioImg: {
-        src: assets + "/placeholder.png",
-        alt: "img 1"
+        src: assets + "/projects/germaine_1.jpg",
+        alt: "Germaine img 1"
       },
       type: "Radiant Heat",
       address: "San Francisco, CA",
@@ -355,8 +355,32 @@ module.exports = {
       info: "More info about this project coming soon.",
       imgs: [
         {
-          src: assets + "/placeholder.png",
-          alt: "img 1"
+          src: assets + "/projects/germaine_1.jpg",
+          alt: "Germaine img 1"
+        },
+        {
+          src: assets + "/projects/germaine_2.jpg",
+          alt: "Germaine img 2"
+        },
+        {
+          src: assets + "/projects/germaine_3.jpg",
+          alt: "Germaine img 3"
+        },
+        {
+          src: assets + "/projects/germaine_4.jpg",
+          alt: "Germaine img 4"
+        },
+        {
+          src: assets + "/projects/germaine_5.jpg",
+          alt: "Germaine img 5"
+        },
+        {
+          src: assets + "/projects/germaine_6.jpg",
+          alt: "Germaine img 6"
+        },
+        {
+          src: assets + "/projects/germaine_7.jpg",
+          alt: "Germaine img 7"
         }
       ]
     },
@@ -365,8 +389,8 @@ module.exports = {
       name: "Loma Vista",
       categories: "project-residential",
       portfolioImg: {
-        src: assets + "/placeholder.png",
-        alt: "img 1"
+        src: assets + "/projects/loma_vista_1.jpg",
+        alt: "Loma Vista img 1"
       },
       type: "Residential",
       address: "San Francisco, CA",
@@ -374,8 +398,36 @@ module.exports = {
       info: "More info about this project coming soon.",
       imgs: [
         {
-          src: assets + "/placeholder.png",
-          alt: "img 1"
+          src: assets + "/projects/loma_vista_1.jpg",
+          alt: "Loma Vista img 1"
+        },
+        {
+          src: assets + "/projects/loma_vista_2.jpg",
+          alt: "Loma Vista img 2"
+        },
+        {
+          src: assets + "/projects/loma_vista_3.jpg",
+          alt: "Loma Vista img 3"
+        },
+        {
+          src: assets + "/projects/loma_vista_4.jpg",
+          alt: "Loma Vista img 4"
+        },
+        {
+          src: assets + "/projects/loma_vista_5.jpg",
+          alt: "Loma Vista img 5"
+        },
+        {
+          src: assets + "/projects/loma_vista_6.jpg",
+          alt: "Loma Vista img 6"
+        },
+        {
+          src: assets + "/projects/loma_vista_7.jpg",
+          alt: "Loma Vista img 7"
+        },
+        {
+          src: assets + "/projects/loma_vista_8.jpg",
+          alt: "Loma Vista img 8"
         }
       ]
     },
@@ -384,8 +436,8 @@ module.exports = {
       name: "Pacific Ave.",
       categories: "project-residential",
       portfolioImg: {
-        src: assets + "/placeholder.png",
-        alt: "img 1"
+        src: assets + "/projects/pacific_1.jpg",
+        alt: "Pacific img 1"
       },
       type: "Residential",
       address: "San Francisco, CA",
@@ -393,8 +445,28 @@ module.exports = {
       info: "More info about this project coming soon.",
       imgs: [
         {
-          src: assets + "/placeholder.png",
-          alt: "img 1"
+          src: assets + "/projects/pacific_1.jpg",
+          alt: "Pacific img 1"
+        },
+        {
+          src: assets + "/projects/pacific_2.jpg",
+          alt: "Pacific img 2"
+        },
+        {
+          src: assets + "/projects/pacific_3.jpg",
+          alt: "Pacific img 3"
+        },
+        {
+          src: assets + "/projects/pacific_4.jpg",
+          alt: "Pacific img 4"
+        },
+        {
+          src: assets + "/projects/pacific_5.jpg",
+          alt: "Pacific img 5"
+        },
+        {
+          src: assets + "/projects/pacific_6.jpg",
+          alt: "Pacific img 6"
         }
       ]
     },
@@ -403,8 +475,8 @@ module.exports = {
       name: "Pier 23",
       categories: "project-commercial",
       portfolioImg: {
-        src: assets + "/placeholder.png",
-        alt: "img 1"
+        src: assets + "/projects/pier_23_1.jpg",
+        alt: "Pier 23 img 1"
       },
       type: "Commercial",
       address: "San Francisco, CA",
@@ -412,8 +484,44 @@ module.exports = {
       info: "More info about this project coming soon.",
       imgs: [
         {
-          src: assets + "/placeholder.png",
-          alt: "img 1"
+          src: assets + "/projects/pier_23_1.jpg",
+          alt: "Pier 23 img 1"
+        },
+        {
+          src: assets + "/projects/pier_23_2.jpg",
+          alt: "Pier 23 img 2"
+        },
+        {
+          src: assets + "/projects/pier_23_3.jpg",
+          alt: "Pier 23 img 3"
+        },
+        {
+          src: assets + "/projects/pier_23_4.jpg",
+          alt: "Pier 23 img 4"
+        },
+        {
+          src: assets + "/projects/pier_23_5.jpg",
+          alt: "Pier 23 img 5"
+        },
+        {
+          src: assets + "/projects/pier_23_6.jpg",
+          alt: "Pier 23 img 6"
+        },
+        {
+          src: assets + "/projects/pier_23_7.jpg",
+          alt: "Pier 23 img 7"
+        },
+        {
+          src: assets + "/projects/pier_23_8.jpg",
+          alt: "Pier 23 img 8"
+        },
+        {
+          src: assets + "/projects/pier_23_9.jpg",
+          alt: "Pier 23 img 9"
+        },
+        {
+          src: assets + "/projects/pier_23_10.jpg",
+          alt: "Pier 23 img 10"
         }
       ]
     },
