@@ -27,23 +27,64 @@
     google_maps_5496904152035();
   });
 </script>
+<% if(state === 'home'){ %>
 <script>
   var tpj = jQuery;
-  var revapi20;
+  var revapi2;
   tpj(document).ready(function () {
-    if (tpj("#rev_slider_20_1").revolution == undefined) {
-      revslider_showDoubleJqueryError("#rev_slider_20_1");
+    if (tpj("#rev_slider_2_1").revolution == undefined) {
+      revslider_showDoubleJqueryError("#rev_slider_2_1");
     } else {
-      revapi20 = tpj("#rev_slider_20_1").show().revolution({
-        sliderType: "hero",
-
+      revapi2 = tpj("#rev_slider_2_1").show().revolution({
+        sliderType: "carousel",
         sliderLayout: "fullwidth",
         dottedOverlay: "none",
         delay: 9000,
-        navigation: {},
-        responsiveLevels: [1240, 1024, 778, 480],
-        gridwidth: [1240, 1024, 778, 480],
-        gridheight: [600, 500, 400, 300],
+        navigation: {
+          keyboardNavigation: "off",
+          keyboard_direction: "horizontal",
+          mouseScrollNavigation: "off",
+          onHoverStop: "off",
+          arrows: {
+            style: "erinyen",
+            enable: true,
+            hide_onmobile: true,
+            hide_under: 600,
+            hide_onleave: true,
+            hide_delay: 200,
+            hide_delay_mobile: 1200,
+            tmp: '<div class="tp-title-wrap"> 	<div class="tp-arr-imgholder"></div> <div class="tp-arr-img-over"></div>	<span class="tp-arr-titleholder">{{title}}</span> </div>',
+            left: {
+              h_align: "left",
+              v_align: "center",
+              h_offset: 30,
+              v_offset: 0
+            },
+            right: {
+              h_align: "right",
+              v_align: "center",
+              h_offset: 30,
+              v_offset: 0
+            }
+          }
+        },
+        carousel: {
+          horizontal_align: "center",
+          vertical_align: "center",
+          fadeout: "off",
+          maxVisibleItems: 3,
+          infinity: "on",
+          space: 0,
+          stretch: "on"
+        },
+        viewPort: {
+          enable: true,
+          outof: "pause",
+          visible_area: "80%"
+        },
+        responsiveLevels: [1840, 1240, 1024, 778, 480],
+        gridwidth: [1840, 1240, 1024, 778, 480],
+        gridheight: [800, 600, 600, 500, 400],
         lazyType: "none",
         parallax: {
           type: "mouse",
@@ -53,21 +94,26 @@
         },
         shadow: 0,
         spinner: "off",
+        stopLoop: "off",
+        stopAfterLoops: -1,
+        stopAtSlide: -1,
+        shuffle: "off",
         autoHeight: "off",
-        disableProgressBar: "on",
-        hideThumbsOnMobile: "off",
+        hideThumbsOnMobile: "on",
         hideSliderAtLimit: 0,
         hideCaptionAtLimit: 0,
         hideAllCaptionAtLilmit: 0,
         debugMode: false,
         fallbacks: {
           simplifyAll: "off",
+          nextSlideOnWindowFocus: "off",
           disableFocusListener: false,
         }
       });
     }
   }); /*ready*/
 </script>
+<% } %>
 <script>
   jQuery(window).load(function () {
     var retina = window.devicePixelRatio > 1 ? true : false;
