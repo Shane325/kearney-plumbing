@@ -26,28 +26,28 @@ module.exports = {
     section_services_info: {
       services_top: [{
         title: 'Commercial Plumbing',
-        description: 'Assertively envisioneer adaptive schemas via go forward technologies. Globally formulate world-class products and global opportunities. Enthusiastically cultivate enabled web services after cutting-edge internal or "organic" sources. Competently implement interactive methods of empowerment rather than sustainable expertise. Rapidiously disseminate end-to-end e-commerce whereas extensible models.'
+        description: 'More information coming soon.'
       },
       {
         title: 'Residential Plumbing',
-        description: 'Assertively envisioneer adaptive schemas via go forward technologies. Globally formulate world-class products and global opportunities. Enthusiastically cultivate enabled web services after cutting-edge internal or "organic" sources. Competently implement interactive methods of empowerment rather than sustainable expertise. Rapidiously disseminate end-to-end e-commerce whereas extensible models.'
+        description: 'More information coming soon.'
       },
       {
         title: 'Radiant Heating',
-        description: 'Assertively envisioneer adaptive schemas via go forward technologies. Globally formulate world-class products and global opportunities. Enthusiastically cultivate enabled web services after cutting-edge internal or "organic" sources. Competently implement interactive methods of empowerment rather than sustainable expertise. Rapidiously disseminate end-to-end e-commerce whereas extensible models.'
+        description: 'More information coming soon.'
       }
       ],
       services_bottom: [{
         title: 'Piping Systems',
-        description: 'Assertively envisioneer adaptive schemas via go forward technologies. Globally formulate world-class products and global opportunities. Enthusiastically cultivate enabled web services after cutting-edge internal or "organic" sources. Competently implement interactive methods of empowerment rather than sustainable expertise. Rapidiously disseminate end-to-end e-commerce whereas extensible models.Heres what we do with piping systems.'
+        description: 'More information coming soon.'
       },
       {
         title: 'Bathroom and Kitchen Remodels',
-        description: 'Put the additional info hereAssertively envisioneer adaptive schemas via go forward technologies. Globally formulate world-class products and global opportunities. Enthusiastically cultivate enabled web services after cutting-edge internal or "organic" sources. Competently implement interactive methods of empowerment rather than sustainable expertise. Rapidiously disseminate end-to-end e-commerce whereas extensible models.'
+        description: 'More information coming soon.'
       },
       {
         title: 'Sewer and Drain Installations',
-        description: 'Heres what we do with sewersAssertively envisioneer adaptive schemas via go forward technologies. Globally formulate world-class products and global opportunities. Enthusiastically cultivate enabled web services after cutting-edge internal or "organic" sources. Competently implement interactive methods of empowerment rather than sustainable expertise. Rapidiously disseminate end-to-end e-commerce whereas extensible models.'
+        description: 'More information coming soon.'
       }
       ]
     }

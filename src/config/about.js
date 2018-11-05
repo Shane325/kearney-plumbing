@@ -3,7 +3,7 @@
 /*
  * Module dependencies
  */
-let assets = require("./config").assets
+let assets = require('./config').assets
 
 module.exports = {
   pageTitle: 'About',
@@ -26,7 +26,7 @@ module.exports = {
   body: {
     section_history: {
       title: 'Our History',
-      description: 'Kearney Plumbing Inc was founded in November of 2015 by owner Brian Kearney. Before starting up the company Brian had previously worked in the industry for 12 years. His 15 years of experience covers apartment buildings, condominiums and commercial buildings. He has continued to grow his business into a company with a reputation for quality tradesmanship, reliable service and quality practices.'
+      description: 'From design to finish, our experienced estimators, project managers and plumbers provide the expertise to ensure your plumbing project is completed on time, on budget and up to code. Kearney Plumbing Inc was founded in November of 2015 by owner Brian Kearney. Before starting up the company Brian had previously worked in the industry for 12 years. His 15 years of experience covers apartment buildings, condominiums and commercial buildings. He has continued to grow his business into a company with a reputation for quality tradesmanship, reliable service and quality practices.'
     },
     section_team: {
       members: [{
@@ -37,7 +37,7 @@ module.exports = {
         displayName: 'Brian Kearney',
         title: 'Owner',
         description: {
-          primary: 'Before starting up the company Brian had previously worked in the industry for 12 years. His 15 years of experience covers apartment buildings, condominiums and commercial buildings.'
+          primary: 'Kearney Plumbing Inc was founded in November of 2015 by owner Brian Kearney. Before starting up the company Brian had previously worked in the industry for 12 years. His 15 years of experience covers apartment buildings, condominiums and commercial buildings. He has continued to grow his business into a company with a reputation for quality tradesmanship, reliable service and quality practices.'
         }
       }]
     }

@@ -21,6 +21,7 @@ module.exports = {
     state: 'CA',
     zip: '94131'
   },
+  license: '1013245',
   social: {
     facebook: 'https://www.facebook.com/KearneyPlumbingInc/',
     instagram: 'https://www.instagram.com/kearney_plumbing/'
