@@ -123,6 +123,7 @@ module.exports.getContact = (req, res) => {
   res.render('../views/pages/contact', {
     js: config.lib.js,
     css: config.lib.css,
+    contactForm: config.contactForm,
     common: commonConfig,
     pageTitle: contactConfig.pageTitle,
     state: contactConfig.state,
@@ -141,7 +142,7 @@ module.exports.sendContactEmail = (req, res, next) => {
     from: req.body.email,
     to: MAILGUN_EMAIL,
     subject: req.body.name + ' sent a message from www.kearneyplumbinginc.com',
-    text: req.body.message
+    text: req.body.body
   }
 
   mailgun.messages().send(data, (error, body) => {

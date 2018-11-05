@@ -26,42 +26,42 @@
                                         <a href="/projects"><span>Commercial</span></a>
                                         <ul class="sub-menu">
                                             <% var commercial = projects.filter(function(project) { %>
-                                            <% return project.categories === 'project-commercial' %>
-                                            <% }) %>
-                                            <% commercial.forEach(function(project) { %>
-                                            <li>
-                                                <a href="/project/<%= project.id %>"><span>
+                                                <% return project.categories === 'project-commercial' %>
+                                                    <% }) %>
+                                                        <% commercial.forEach(function(project) { %>
+                                                            <li>
+                                                                <a href="/project/<%= project.id %>"><span>
                                                         <%= project.name %></span></a>
-                                            </li>
-                                            <% }) %>
+                                                            </li>
+                                                            <% }) %>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="/projects"><span>Residential</span></a>
                                         <ul class="sub-menu">
                                             <% var residential = projects.filter(function(project) { %>
-                                            <% return project.categories === 'project-residential' %>
-                                            <% }) %>
-                                            <% residential.forEach(function(project) { %>
-                                            <li>
-                                                <a href="/project/<%= project.id %>"><span>
+                                                <% return project.categories === 'project-residential' %>
+                                                    <% }) %>
+                                                        <% residential.forEach(function(project) { %>
+                                                            <li>
+                                                                <a href="/project/<%= project.id %>"><span>
                                                         <%= project.name %></span></a>
-                                            </li>
-                                            <% }) %>
+                                                            </li>
+                                                            <% }) %>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="/projects"><span>Radiant Heat</span></a>
                                         <ul class="sub-menu">
                                             <% var radiantHeat = projects.filter(function(project) { %>
-                                            <% return project.categories === 'project-radiant-heat' %>
-                                            <% }) %>
-                                            <% radiantHeat.forEach(function(project) { %>
-                                            <li>
-                                                <a href="/project/<%= project.id %>"><span>
+                                                <% return project.categories === 'project-radiant-heat' %>
+                                                    <% }) %>
+                                                        <% radiantHeat.forEach(function(project) { %>
+                                                            <li>
+                                                                <a href="/project/<%= project.id %>"><span>
                                                         <%= project.name %></span></a>
-                                            </li>
-                                            <% }) %>
+                                                            </li>
+                                                            <% }) %>
                                         </ul>
                                     </li>
                                 </ul>
@@ -76,10 +76,10 @@
             <div class="top_bar_right">
                 <div class="top_bar_right_wrapper">
                     <!-- Shopping cart icon-->
-                    <a id="header_cart" href="tel:<%= common.phone.src %>"><i class="icon-phone"></i></a>
-                    <a id="header_cart" href="mailto:<%= common.email %>"><i class="icon-mail"></i></a>
-                    <a id="header_cart" href="<%= common.social.facebook %>"><i class="icon-facebook"></i></a>
-                    <a id="search_button" href="<%= common.social.instagram %>"><i class="icon-instagram"></i></a>
+                    <a class="header_cart" href="tel:<%= common.phone.src %>"><i class="icon-phone"></i></a>
+                    <a class="header_cart" href="mailto:<%= common.email %>"><i class="icon-mail"></i></a>
+                    <a class="header_cart" href="<%= common.social.facebook %>" target="_blank"><i class="icon-facebook"></i></a>
+                    <a class="header_cart" href="<%= common.social.instagram %>" target="_blank"><i class="icon-instagram"></i></a>
                 </div>
             </div>
         </div>

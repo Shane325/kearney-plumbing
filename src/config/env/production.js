@@ -7,5 +7,6 @@ module.exports = {
     email: 'info@kearneyplumbinginc.com',
     api_key: 'key-9a0c214f6a86608897a7ba6d8a14816a',
     domain: 'mg.kearneyplumbinginc.com'
-  }
+  },
+  contactForm: 'http://www.kearneyplumbinginc.com/contact/send-email'
 }
