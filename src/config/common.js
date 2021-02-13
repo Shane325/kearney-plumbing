@@ -9,7 +9,7 @@ module.exports = {
     display: '+1 (415) 619-3344',
     src: '+14156193344'
   },
-  email: 'info@kearneyplumbinginc.com',
+  email: 'brian@kearneyplumbinginc.com',
   fax: {
     display: '+1 (415) 619-3344',
     src: '+14156193344'
