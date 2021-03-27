@@ -26,28 +26,24 @@ module.exports = {
     section_services_info: {
       services_top: [{
         title: 'Commercial Plumbing',
-        description: 'More information coming soon.'
+        description: ''
       },
       {
         title: 'Residential Plumbing',
-        description: 'More information coming soon.'
+        description: ''
       },
       {
         title: 'Radiant Heating',
-        description: 'More information coming soon.'
+        description: ''
       }
       ],
       services_bottom: [{
-        title: 'Piping Systems',
-        description: 'More information coming soon.'
-      },
-      {
-        title: 'Bathroom and Kitchen Remodels',
-        description: 'More information coming soon.'
+        title: 'Air to Water Heat Pump',
+        description: ''
       },
       {
         title: 'Sewer and Drain Installations',
-        description: 'More information coming soon.'
+        description: ''
       }
       ]
     }

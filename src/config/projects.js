@@ -649,6 +649,123 @@ module.exports = {
           alt: "Santa Ysabel img 6"
         }
       ]
+    },
+    {
+      id: 16,
+      name: "Holly Park Circle",
+      categories: "project-air-to-water",
+      portfolioImg: {
+        src: assets + "/projects/holly_park_1.jpg",
+        alt: "Holly Park img 1"
+      },
+      type: "Air to Water Heat",
+      address: "San Francisco, CA",
+      contractor: "General Contractor",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/projects/holly_park_1.jpg",
+          alt: "Holly Park img 1"
+        },
+        {
+          src: assets + "/projects/holly_park_2.jpg",
+          alt: "Holly Park img 2"
+        },
+        {
+          src: assets + "/projects/holly_park_3.jpg",
+          alt: "Holly Park img 3"
+        },
+        {
+          src: assets + "/projects/holly_park_4.jpg",
+          alt: "Holly Park img 4"
+        },
+        {
+          src: assets + "/projects/holly_park_5.jpg",
+          alt: "Holly Park img 5"
+        },
+        {
+          src: assets + "/projects/holly_park_6.jpg",
+          alt: "Holly Park img 6"
+        }
+      ]
+    },
+    {
+      id: 17,
+      name: "Dorantes Avenue",
+      categories: "project-radiant-heat",
+      portfolioImg: {
+        src: assets + "/projects/dorantes_1.jpg",
+        alt: "Dorantes Ave img 1"
+      },
+      type: "Radiant Heat",
+      address: "San Francisco, CA",
+      contractor: "General Contractor",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/projects/dorantes_1.jpg",
+          alt: "Dorantes Ave img 1"
+        },
+        {
+          src: assets + "/projects/dorantes_2.jpg",
+          alt: "Dorantes Ave img 2"
+        },
+        {
+          src: assets + "/projects/dorantes_3.jpg",
+          alt: "Dorantes Ave img 3"
+        },
+        {
+          src: assets + "/projects/dorantes_4.jpg",
+          alt: "Dorantes Ave img 4"
+        },
+        {
+          src: assets + "/projects/dorantes_5.jpg",
+          alt: "Dorantes Ave img 5"
+        },
+        {
+          src: assets + "/projects/dorantes_6.jpg",
+          alt: "Dorantes Ave img 6"
+        },
+      ]
+    },
+    {
+      id: 18,
+      name: "Fitzgerald",
+      categories: "project-commercial",
+      portfolioImg: {
+        src: assets + "/projects/fitz_1.jpg",
+        alt: "Fitzgerald img 1"
+      },
+      type: "Commercial",
+      address: "San Francisco, CA",
+      contractor: "General Contractor",
+      info: "More info about this project coming soon.",
+      imgs: [
+        {
+          src: assets + "/projects/fitz_1.jpg",
+          alt: "Fitzgerald img 1"
+        },
+        {
+          src: assets + "/projects/fitz_2.jpg",
+          alt: "Fitzgerald img 2"
+        },
+        {
+          src: assets + "/projects/fitz_3.jpg",
+          alt: "Fitzgerald img 3"
+        },
+        {
+          src: assets + "/projects/fitz_4.jpg",
+          alt: "Fitzgerald img 4"
+        },
+        {
+          src: assets + "/projects/fitz_5.jpg",
+          alt: "Fitzgerald img 5"
+        },
+        {
+          src: assets + "/projects/fitz_6.jpg",
+          alt: "Fitzgerald img 6"
+        },
+      ]
     }
   ]
 };
