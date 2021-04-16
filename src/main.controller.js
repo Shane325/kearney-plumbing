@@ -133,7 +133,7 @@ module.exports.getContact = (req, res) => {
   })
 }
 
-/** 
+/**
  * Send contact email
  *
  */
@@ -152,5 +152,25 @@ module.exports.sendContactEmail = (req, res, next) => {
 
     res.status(HttpStatus.OK)
     res.send('ok')
+  })
+}
+
+/**
+ * Return air-to-water page
+ *
+ * @returns - renders air-to-water page
+ */
+module.exports.getAirToWater = (req, res) => {
+  res.render('../views/pages/air-to-water', {
+    js: config.lib.js,
+    css: config.lib.css,
+    assets: config.assets,
+    common: commonConfig,
+    pageTitle: servicesConfig.pageTitle,
+    state: servicesConfig.state,
+    header: servicesConfig.header,
+    subheader: servicesConfig.subheader,
+    body: servicesConfig.body,
+    projects: projectsConfig.projects
   })
 }

@@ -4,27 +4,632 @@
 <html lang="en">
 
 <head>
-  <% include ../partials/head %>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+
+  <title>Kearney Plumbing |
+    <%= pageTitle %>
+  </title>
+
+  <meta name="author" content="Shane Barry">
+  <meta name="description" content="Welcome to Kearney Plumbing">
+  <meta name="keywords" content="Construction,Commercial,Residential,Labor,Tools,Projects">
+
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
+
+  <% css.forEach(function(src){ %>
+    <link rel="stylesheet" href="<%=src  %>" type="text/css">
+    <% }) %>
 </head>
 
 <body class="page-parent template-slider color-blue layout-full-width header-modern subheader-transparent sticky-header sticky-white subheader-title-left">
   <div id="Wrapper">
     <div id="Header_wrapper">
-      <% include ../partials/header/header %>
+      <header id="Header">
+        <div id="Action_bar">
+          <div class="container">
+            <div class="column one">
+              <ul class="contact_details">
+                <li class="slogan">
+                  Have any questions?
+                </li>
+                <li class="phone">
+                  <i class="icon-phone"></i>
+                  <a href="tel:<%= common.phone.src %>">
+                    <%= common.phone.display %>
+                  </a>
+                </li>
+                <li class="mail">
+                  <i class="icon-mail-line"></i>
+                  <a href="mailto:<%= common.email %>">
+                    <%= common.email %>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="Top_bar">
+          <div class="container">
+            <div class="column one">
+              <div class="top_bar_left clearfix">
+                <div class="logo">
+                  <a id="logo" href="/" title="Kearney Plumbing Inc."><img class="scale-with-grid" src="<%= common.assets %>/kearney-plumbing-logo.jpg"
+                                                                           alt="Kearney Plumbing Logo" />
+                  </a>
+                </div>
+                <div class="menu_wrapper">
+                  <nav id="menu">
+                    <ul id="menu-main-menu" class="menu">
+                      <li class="<% if(state === 'home') { %>current-menu-item<% } %>">
+                        <a href="/"><span>Home</span></a>
+                      </li>
+                      <li class="<% if(state === 'about') { %>current-menu-item<% } %>">
+                        <a href="/about"><span>About us</span></a>
+                      </li>
+                      <li class="<% if(state === 'services') { %>current-menu-item<% } %>">
+                        <a href="/services"><span>Services</span></a>
+                      </li>
+                      <li class="<% if(state === 'projects' || state === 'project') { %>current-menu-item<% } %>">
+                        <a href="/projects"><span>Projects</span></a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="/projects"><span>Commercial</span></a>
+                            <ul class="sub-menu">
+                              <% var commercial = projects.filter(function(project) { %>
+                                <% return project.categories === 'project-commercial' %>
+                                  <% }) %>
+                                    <% commercial.forEach(function(project) { %>
+                                      <li>
+                                        <a href="/project/<%= project.id %>"><span>
+                                  <%= project.name %></span></a>
+                                      </li>
+                                      <% }) %>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="/projects"><span>Residential</span></a>
+                            <ul class="sub-menu">
+                              <% var residential = projects.filter(function(project) { %>
+                                <% return project.categories === 'project-residential' %>
+                                  <% }) %>
+                                    <% residential.forEach(function(project) { %>
+                                      <li>
+                                        <a href="/project/<%= project.id %>"><span>
+                                  <%= project.name %></span></a>
+                                      </li>
+                                      <% }) %>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="/projects"><span>Radiant Heat</span></a>
+                            <ul class="sub-menu">
+                              <% var radiantHeat = projects.filter(function(project) { %>
+                                <% return project.categories === 'project-radiant-heat' %>
+                                  <% }) %>
+                                    <% radiantHeat.forEach(function(project) { %>
+                                      <li>
+                                        <a href="/project/<%= project.id %>"><span>
+                                  <%= project.name %></span></a>
+                                      </li>
+                                      <% }) %>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="/projects"><span>Air to Water Heat</span></a>
+                            <ul class="sub-menu">
+                              <% var radiantHeat = projects.filter(function(project) { %>
+                                <% return project.categories === 'project-air-to-water' %>
+                                  <% }) %>
+                                    <% radiantHeat.forEach(function(project) { %>
+                                      <li>
+                                        <a href="/project/<%= project.id %>"><span>
+                                  <%= project.name %></span></a>
+                                      </li>
+                                      <% }) %>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="<% if(state === 'contact') { %>current-menu-item<% } %>">
+                        <a href="/contact"><span>Contact</span></a>
+                      </li>
+                      <li>
+                        <a href="/air-to-water"><span>Air to Water</span></a>
+                      </li>
+                    </ul>
+                  </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
+                </div>
+              </div>
+              <div class="top_bar_right">
+                <div class="top_bar_right_wrapper">
+                  <!-- Shopping cart icon-->
+                  <a class="header_cart" href="tel:<%= common.phone.src %>"><i class="icon-phone"></i></a>
+                  <a class="header_cart" href="mailto:<%= common.email %>"><i class="icon-mail"></i></a>
+                  <a class="header_cart" href="<%= common.social.facebook %>" target="_blank"><i class="icon-facebook"></i></a>
+                  <a class="header_cart" href="<%= common.social.instagram %>" target="_blank"><i class="icon-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% if(state === 'home'){ %>
+          <% include ../partials/header/header-main-slider %>
+            <% } %>
+      </header>
     </div>
     <div id="Content">
       <div class="content_wrapper clearfix">
         <div class="sections_group">
           <div class="entry_content">
-            <% include ../components/home/home-content %>
+            <!-- CTA 1 -->
+            <div class="call-to-action">
+              <div class="container">
+                <div class="column one column_column center-text">
+                  <span class="call-to-action-text hidden-on-mobile">
+                    <strong>Need plumbing services for your project?</strong>&nbsp;&nbsp;
+                  </span>
+                  <a class="button button_theme button_large button_js cta-button" href="/projects">
+                    <span class="button_label"><strong>SEE OUR WORK</strong></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- SERVICES -->
+            <div class="section flv_sections_16 margin-top-50" id="photobox">
+              <div class="section_wrapper clearfix">
+                <div class="items_group clearfix">
+                  <!-- One Third (1/3) Column -->
+                  <div class="column one-third column_photo_box">
+                    <div class="photo_box ">
+                      <h4>Residential</h4>
+                      <div class="image_frame">
+                        <div class="image_wrapper">
+                          <a href="/services">
+                            <div class="mask"></div><img class="scale-with-grid" src="<%= assets %>/home-residential-2.jpg" alt="Residential img" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="desc">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- One Third (1/3) Column -->
+                  <div class="column one-third column_photo_box">
+                    <div class="photo_box ">
+                      <h4>Commercial</h4>
+                      <div class="image_frame">
+                        <div class="image_wrapper">
+                          <a href="/services">
+                            <div class="mask"></div><img class="scale-with-grid" src="<%= assets %>/home/home-commercial_2.jpg" alt="Commercial img" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="desc">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- One Third (1/3) Column -->
+                  <div class="column one-third column_photo_box">
+                    <div class="photo_box ">
+                      <h4>Radiant Heat</h4>
+                      <div class="image_frame">
+                        <div class="image_wrapper">
+                          <a href="/services">
+                            <div class="mask"></div><img class="scale-with-grid" src="<%= assets %>/home-radiant-heat-2.jpg" alt="Remodel img" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="desc">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CTA 2 -->
+            <div class="section center flv_sections_22">
+              <div class="section_wrapper clearfix">
+                <div class="items_group clearfix">
+                  <!-- One full width row-->
+                  <div class="column one column_column">
+                    <div class="column_attr ">
+                      <a class="button button_left button_js button_large" href="/contact"><span class="button_icon"><i class="icon-clipboard"></i></span><span
+                                                                                                                                                    class="button_label">SUBMIT BID REQUEST</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section full-width flv_sections_16">
+              <div class="section_wrapper clearfix">
+                <div class="items_group clearfix">
+                  <!-- One full width row-->
+                  <div class="column one column_fancy_divider">
+                    <div class="fancy-divider">
+                      <svg preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="flv_style_44">
+                        <path d="M0 0 L50 100 L100 0 Z" class="flv_style_45">
+                          </svg>
+                    </div>
+                  </div>
+                  <!-- Page devider -->
+                  <!-- One full width row-->
+                  <div class="column one column_divider">
+                    <hr class="no_line flv_style_21" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- COUNTER -->
+            <div class="flv_sections_16 section margin-top-100" id="counter">
+              <div class="section_wrapper clearfix">
+                <div class="items_group clearfix">
+                  <!-- One full width row-->
+                  <div class="column one column_column">
+                    <div class="column_attr helper">
+                      <div class="helper_header">
+                        <h4 class="title">About us</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column one-second column_counter">
+                    <div class="counter animate-math counter_horizontal">
+                      <div class="icon_wrapper">
+                        <i class="icon-cog"></i> </div>
+                      <div class="desc_wrapper">
+                        <div class="number-wrapper">
+                          <span class="number" data-to="38">0</span> </div>
+                        <p class="title">
+                          Projects completed </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- One Third (1/3) Column -->
+                  <div class="column one-second column_counter">
+                    <div class="counter animate-math counter_horizontal">
+                      <div class="icon_wrapper">
+                        <i class="icon-tools"></i> </div>
+                      <div class="desc_wrapper">
+                        <div class="number-wrapper">
+                          <span class="number" data-to="16">0</span> </div>
+                        <p class="title">
+                          Years of experience</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- PROJECT SLIDER -->
+            <div class="section" id="portfolioslider flv_sections_16">
+              <div class="section_wrapper clearfix">
+                <div class="items_group clearfix">
+                  <!-- One full width row-->
+                  <div class="column one column_column">
+                    <div class="column_attr helper">
+                      <div class="helper_header">
+                        <h4 class="title">Projects</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section full-width flv_sections_16">
+              <div class="section_wrapper clearfix">
+                <div class="items_group clearfix">
+                  <!-- One full width row-->
+                  <div class="column one column_portfolio_slider">
+                    <div class="portfolio_slider ">
+                      <a class="slider_nav slider_prev themebg" href="#"><i class="icon-left-open-big"></i></a><a class="slider_nav slider_next themebg" href="#"><i class="icon-right-open-big"></i></a>
+                      <ul class="portfolio_slider_ul">
+                        <% projects.forEach(function(project){ %>
+                          <li>
+                            <div class="image_frame scale-with-grid">
+                              <div class="image_wrapper">
+                                <a href="/project/<%= project.id %>">
+                                  <div class="mask"></div><img src="<%= project.portfolioImg.src %>" class="scale-with-grid wp-post-image" alt="<%= project.portfolioImg.alt %>" />
+                                </a>
+                                <div class="image_links single">
+                                  <a href="/project/<%= project.id %>" class="link"><i class="icon-link"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <% }) %>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TESTIMONIALS -->
           </div>
         </div>
       </div>
     </div>
-    <% include ../partials/footer %>
-  </div>
+    <footer id="Footer" class="clearfix">
+      <div class="footer_action">
+        <div class="container">
+          <div class="column one column_column">
+            <span class="flv_color_white">
+                <span class="flv_font_24 hidden-on-mobile"><strong>We're always available to answer any questions you may have</strong>&nbsp;&nbsp;
+                </span>
+            <a class="button button_large button_js footer-action-button" href="/contact">
+                  <span class="button_label">CONTACT US</span>
+                </a>
+          </div>
+        </div>
+      </div>
+      <div class="widgets_wrapper">
+        <div class="container">
+          <div class="one-third column">
+            <aside id="text-7" class="widget widget_text footer-widget-about">
+              <div class="textwidget">
+                <h3>Connect</h3>
+                <p>
+                  <span class="big">We strive to provide the best plumbing services possible.</span>
+                </p>
+                <p>
+                  We bring over 15 years experience covering apartment buildings, condominiums and commercial buildings.
+                </p>
+                <a href="<%= common.social.facebook %>" class="icon_bar icon_bar_facebook icon_bar_small">
+                      <span class="t"><i class="icon-facebook"></i></span>
+                      <span class="b"><i class="icon-facebook"></i></span>
+                    </a>
+                <a href="<%= common.social.instagram %>" class="icon_bar icon_bar_instagram icon_bar_small">
+                      <span class="t"><i class="icon-instagram"></i></span>
+                      <span class="b"><i class="icon-instagram"></i></span>
+                    </a>
+                <a href="mailto:<%= common.email %>" class="icon_bar icon_bar_email icon_bar_small">
+                      <span class="t"><i class="icon-email"></i></span>
+                      <span class="b"><i class="icon-email"></i></span>
+                    </a>
+                <a href="tel:<%= common.phone.src %>" class="icon_bar icon_bar_phone icon_bar_small">
+                      <span class="t"><i class="icon-phone"></i></span>
+                      <span class="b"><i class="icon-phone"></i></span>
+                    </a>
+              </div>
+            </aside>
+          </div>
+          <div class="one-third column">
+            <div class="get_in_touch">
+              <h3>Get in touch</h3>
+              <div class="get_in_touch_wrapper">
+                <ul>
+                  <li class="address">
+                    <span class="icon"><i class="icon-location"></i></span>
+                    <span class="address_wrapper"><strong>Kearney Plumbing Inc.</strong>
+                          <br> <%= common.address.street %>,
+                          <br> <%= common.address.city %>, <%= common.address.state %>, <%= common.address.zip %></span>
+                  </li>
+                  <li class="phone">
+                    <span class="icon"><i class="icon-phone"></i></span>
+                    <p>
+                      <a href="tel:<%= common.phone.src %>">
+                        <%= common.phone.display %>
+                      </a>
+                    </p>
+                  </li>
+                  <li class="mail">
+                    <span class="icon"><i class="icon-mail"></i></span>
+                    <p>
+                      <a href="mailto:<%= common.email %>">
+                        <%= common.email %>
+                      </a>
+                    </p>
+                  </li>
+                  <li class="www">
+                    <span class="icon"><i class="icon-link"></i></span>
+                    <p>
+                      <a target="_blank" href="<%= common.website %>">
+                        <%= common.website %>
+                      </a>
+                    </p>
+                  </li>
+                  <li class="www">
+                    <span class="icon"><i class="icon-docs"></i></span>
+                    <p>
+                      <a href="javascript:void(0)">
+                            License #: <%= common.license %>
+                          </a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="one-third column">
+            <div class="footer-action-map">
+              <h3>Find us</h3>
+              <div class="google-map-wrapper">
+                <div class="google-map" id="google-map-area-5496904152035" style="width:100%; height:230px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_copy">
+        <div class="container">
+          <div class="column one">
+            <a id="back_to_top" href="#" class="button button_left button_js"><span class="button_icon"><i class="icon-up-open-big"></i></span></a>
+            <div class="copyright">
+              &copy;
+              <%= new Date().getFullYear() %> Kearney Plumbing Inc. - Website by <a href="https://www.shanebarry.com" target="_blank">Shane Barry</a>
+            </div>
+            <ul class="social">
+              <li class="facebook">
+                <a href="<%= common.social.facebook %>" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>
+              </li>
+              <li class="instagram">
+                <a href="<%= common.social.instagram %>" title="Instagram" target="_blank"><i class="icon-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  <% include ../partials/foot %>
+  </div>
+  <% js.forEach(function(src){ %>
+    <script src="<%=src %>"></script>
+    <% }) %>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_ggeIaHotxgAOnE7jj692C6GmKElNFHA&v=3.exp"></script>
+      <script>
+        function google_maps_5496904152035() {
+          var latlng = new google.maps.LatLng(37.751305, -122.451258);
+          var myOptions = {
+            zoom: 12,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            zoomControl: true,
+            mapTypeControl: false,
+            streetViewControl: false,
+            scrollwheel: false
+          };
+          var map = new google.maps.Map(document.getElementById(
+            "google-map-area-5496904152035"), myOptions);
+          var marker = new google.maps.Marker({
+            position: latlng,
+            map: map
+          });
+        }
+
+        jQuery(document).ready(function($) {
+          google_maps_5496904152035();
+        });
+
+      </script>
+      <% if(state === 'home'){ %>
+        <script>
+          var tpj = jQuery;
+          var revapi2;
+          tpj(document).ready(function() {
+            if (tpj("#rev_slider_2_1").revolution == undefined) {
+              revslider_showDoubleJqueryError("#rev_slider_2_1");
+            } else {
+              revapi2 = tpj("#rev_slider_2_1").show().revolution({
+                sliderType: "carousel",
+                sliderLayout: "fullwidth",
+                dottedOverlay: "none",
+                delay: 9000,
+                navigation: {
+                  keyboardNavigation: "off",
+                  keyboard_direction: "horizontal",
+                  mouseScrollNavigation: "off",
+                  onHoverStop: "off",
+                  arrows: {
+                    style: "erinyen",
+                    enable: true,
+                    hide_onmobile: true,
+                    hide_under: 600,
+                    hide_onleave: true,
+                    hide_delay: 200,
+                    hide_delay_mobile: 1200,
+                    tmp: '<div class="tp-title-wrap"> 	<div class="tp-arr-imgholder"></div> <div class="tp-arr-img-over"></div>	<span class="tp-arr-titleholder">{{title}}</span> </div>',
+                    left: {
+                      h_align: "left",
+                      v_align: "center",
+                      h_offset: 30,
+                      v_offset: 0
+                    },
+                    right: {
+                      h_align: "right",
+                      v_align: "center",
+                      h_offset: 30,
+                      v_offset: 0
+                    }
+                  }
+                },
+                carousel: {
+                  horizontal_align: "center",
+                  vertical_align: "center",
+                  fadeout: "off",
+                  maxVisibleItems: 3,
+                  infinity: "on",
+                  space: 0,
+                  stretch: "on"
+                },
+                viewPort: {
+                  enable: true,
+                  outof: "pause",
+                  visible_area: "80%"
+                },
+                responsiveLevels: [1840, 1240, 1024, 778, 480],
+                gridwidth: [1840, 1240, 1024, 778, 480],
+                gridheight: [800, 600, 600, 500, 400],
+                lazyType: "none",
+                parallax: {
+                  type: "mouse",
+                  origo: "slidercenter",
+                  speed: 2000,
+                  levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
+                },
+                shadow: 0,
+                spinner: "off",
+                stopLoop: "off",
+                stopAfterLoops: -1,
+                stopAtSlide: -1,
+                shuffle: "off",
+                autoHeight: "off",
+                hideThumbsOnMobile: "on",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                  simplifyAll: "off",
+                  nextSlideOnWindowFocus: "off",
+                  disableFocusListener: false,
+                }
+              });
+            }
+          }); /*ready*/
+
+        </script>
+        <% } %>
+          <script>
+            jQuery(window).load(function() {
+              var retina = window.devicePixelRatio > 1 ? true : false;
+              if (retina) {
+                var retinaEl = jQuery("#logo img");
+                var retinaLogoW = retinaEl.width();
+                var retinaLogoH = retinaEl.height();
+                retinaEl.attr("src", "<%= common.assets %>/kearney-plumbing-logo.jpg").width(retinaLogoW).height(retinaLogoH)
+              }
+            });
+
+          </script>
+          <% if(state === 'contact'){ %>
+            <script>
+              function google_maps_54a672a1c80e7() {
+                var latlng = new google.maps.LatLng(37.7513038, -122.4510947);
+                var myOptions = {
+                  zoom: 13,
+                  center: latlng,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  zoomControl: true,
+                  mapTypeControl: false,
+                  streetViewControl: false,
+                  scrollwheel: false
+                };
+                var map = new google.maps.Map(document.getElementById("google-map-area-54a672a1c80e7"), myOptions);
+                var marker = new google.maps.Marker({
+                  position: latlng,
+                  map: map
+                });
+              }
+
+              jQuery(document).ready(function($) {
+                google_maps_54a672a1c80e7();
+              });
+
+            </script>
+            <% } %>
 </body>
 
 </html>

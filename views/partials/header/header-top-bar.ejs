@@ -1,101 +1,104 @@
 <div id="Top_bar">
-    <div class="container">
-        <div class="column one">
-            <div class="top_bar_left clearfix">
-                <div class="logo">
-                    <a id="logo" href="/" title="Kearney Plumbing Inc."><img class="scale-with-grid" src="<%= common.assets %>/kearney-plumbing-logo.jpg"
+  <div class="container">
+    <div class="column one">
+      <div class="top_bar_left clearfix">
+        <div class="logo">
+          <a id="logo" href="/" title="Kearney Plumbing Inc."><img class="scale-with-grid" src="<%= common.assets %>/kearney-plumbing-logo.jpg"
                             alt="Kearney Plumbing Logo" />
                     </a>
-                </div>
-                <div class="menu_wrapper">
-                    <nav id="menu">
-                        <ul id="menu-main-menu" class="menu">
-                            <li class="<% if(state === 'home') { %>current-menu-item<% } %>">
-                                <a href="/"><span>Home</span></a>
-                            </li>
-                            <li class="<% if(state === 'about') { %>current-menu-item<% } %>">
-                                <a href="/about"><span>About us</span></a>
-                            </li>
-                            <li class="<% if(state === 'services') { %>current-menu-item<% } %>">
-                                <a href="/services"><span>Services</span></a>
-                            </li>
-                            <li class="<% if(state === 'projects' || state === 'project') { %>current-menu-item<% } %>">
-                                <a href="/projects"><span>Projects</span></a>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="/projects"><span>Commercial</span></a>
-                                        <ul class="sub-menu">
-                                            <% var commercial = projects.filter(function(project) { %>
-                                                <% return project.categories === 'project-commercial' %>
-                                                    <% }) %>
-                                                        <% commercial.forEach(function(project) { %>
-                                                            <li>
-                                                                <a href="/project/<%= project.id %>"><span>
-                                                        <%= project.name %></span></a>
-                                                            </li>
-                                                            <% }) %>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="/projects"><span>Residential</span></a>
-                                        <ul class="sub-menu">
-                                            <% var residential = projects.filter(function(project) { %>
-                                                <% return project.categories === 'project-residential' %>
-                                                    <% }) %>
-                                                        <% residential.forEach(function(project) { %>
-                                                            <li>
-                                                                <a href="/project/<%= project.id %>"><span>
-                                                        <%= project.name %></span></a>
-                                                            </li>
-                                                            <% }) %>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="/projects"><span>Radiant Heat</span></a>
-                                        <ul class="sub-menu">
-                                            <% var radiantHeat = projects.filter(function(project) { %>
-                                                <% return project.categories === 'project-radiant-heat' %>
-                                                    <% }) %>
-                                                        <% radiantHeat.forEach(function(project) { %>
-                                                            <li>
-                                                                <a href="/project/<%= project.id %>"><span>
-                                                        <%= project.name %></span></a>
-                                                            </li>
-                                                            <% }) %>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="/projects"><span>Air to Water Heat</span></a>
-                                        <ul class="sub-menu">
-                                            <% var radiantHeat = projects.filter(function(project) { %>
-                                                <% return project.categories === 'project-air-to-water' %>
-                                                    <% }) %>
-                                                        <% radiantHeat.forEach(function(project) { %>
-                                                            <li>
-                                                                <a href="/project/<%= project.id %>"><span>
-                                                        <%= project.name %></span></a>
-                                                            </li>
-                                                            <% }) %>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="<% if(state === 'contact') { %>current-menu-item<% } %>">
-                                <a href="/contact"><span>Contact</span></a>
-                            </li>
-                        </ul>
-                    </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
-                </div>
-            </div>
-            <div class="top_bar_right">
-                <div class="top_bar_right_wrapper">
-                    <!-- Shopping cart icon-->
-                    <a class="header_cart" href="tel:<%= common.phone.src %>"><i class="icon-phone"></i></a>
-                    <a class="header_cart" href="mailto:<%= common.email %>"><i class="icon-mail"></i></a>
-                    <a class="header_cart" href="<%= common.social.facebook %>" target="_blank"><i class="icon-facebook"></i></a>
-                    <a class="header_cart" href="<%= common.social.instagram %>" target="_blank"><i class="icon-instagram"></i></a>
-                </div>
-            </div>
         </div>
+        <div class="menu_wrapper">
+          <nav id="menu">
+            <ul id="menu-main-menu" class="menu">
+              <li class="<% if(state === 'home') { %>current-menu-item<% } %>">
+                <a href="/"><span>Home</span></a>
+              </li>
+              <li class="<% if(state === 'about') { %>current-menu-item<% } %>">
+                <a href="/about"><span>About us</span></a>
+              </li>
+              <li class="<% if(state === 'services') { %>current-menu-item<% } %>">
+                <a href="/services"><span>Services</span></a>
+              </li>
+              <li class="<% if(state === 'projects' || state === 'project') { %>current-menu-item<% } %>">
+                <a href="/projects"><span>Projects</span></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="/projects"><span>Commercial</span></a>
+                    <ul class="sub-menu">
+                      <% var commercial = projects.filter(function(project) { %>
+                        <% return project.categories === 'project-commercial' %>
+                          <% }) %>
+                            <% commercial.forEach(function(project) { %>
+                              <li>
+                                <a href="/project/<%= project.id %>"><span>
+                                                        <%= project.name %></span></a>
+                              </li>
+                              <% }) %>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/projects"><span>Residential</span></a>
+                    <ul class="sub-menu">
+                      <% var residential = projects.filter(function(project) { %>
+                        <% return project.categories === 'project-residential' %>
+                          <% }) %>
+                            <% residential.forEach(function(project) { %>
+                              <li>
+                                <a href="/project/<%= project.id %>"><span>
+                                                        <%= project.name %></span></a>
+                              </li>
+                              <% }) %>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/projects"><span>Radiant Heat</span></a>
+                    <ul class="sub-menu">
+                      <% var radiantHeat = projects.filter(function(project) { %>
+                        <% return project.categories === 'project-radiant-heat' %>
+                          <% }) %>
+                            <% radiantHeat.forEach(function(project) { %>
+                              <li>
+                                <a href="/project/<%= project.id %>"><span>
+                                                        <%= project.name %></span></a>
+                              </li>
+                              <% }) %>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/projects"><span>Air to Water Heat</span></a>
+                    <ul class="sub-menu">
+                      <% var radiantHeat = projects.filter(function(project) { %>
+                        <% return project.categories === 'project-air-to-water' %>
+                          <% }) %>
+                            <% radiantHeat.forEach(function(project) { %>
+                              <li>
+                                <a href="/project/<%= project.id %>"><span>
+                                                        <%= project.name %></span></a>
+                              </li>
+                              <% }) %>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="<% if(state === 'contact') { %>current-menu-item<% } %>">
+                <a href="/contact"><span>Contact</span></a>
+              </li>
+              <li>
+                <a href="/air-to-water"><span>Air to Water</span></a>
+              </li>
+            </ul>
+          </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
+        </div>
+      </div>
+      <div class="top_bar_right">
+        <div class="top_bar_right_wrapper">
+          <!-- Shopping cart icon-->
+          <a class="header_cart" href="tel:<%= common.phone.src %>"><i class="icon-phone"></i></a>
+          <a class="header_cart" href="mailto:<%= common.email %>"><i class="icon-mail"></i></a>
+          <a class="header_cart" href="<%= common.social.facebook %>" target="_blank"><i class="icon-facebook"></i></a>
+          <a class="header_cart" href="<%= common.social.instagram %>" target="_blank"><i class="icon-instagram"></i></a>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
